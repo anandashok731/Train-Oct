@@ -17,4 +17,9 @@ body{
     color: white;
     border-radius: 50px;
     cursor: pointer;
+    transition: backgound 1s , transform 0.3s 1s;
+}
+.circle:hover{
+    background: salmon;
+    transform: rotate(360deg);
 }
