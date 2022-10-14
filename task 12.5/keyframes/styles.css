@@ -38,12 +38,12 @@ html,body{
     left: 0;
     height: 60%;
     animation-name: drive;
-    animation-duration: 4s;
-    animation-fill-mode: backwards;
-    animation-delay: 2s;
+    animation-duration: 5s;
+    animation-fill-mode: both;
+    animation-iteration-count: infinite;
 
 }
 @keyframes drive{
-    from{transform: translateX(0);}
-    to{transform: translateX(1250px);}
+    from{transform: translateX(-60px);}
+    to{transform: translateX(1400px);}
 }
