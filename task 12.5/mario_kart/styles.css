@@ -38,7 +38,7 @@ html,body{
     left: 0;
     height: 60%;
     animation: drive 4s both infinite linear,
-               jump .4s 1.2s ease ;
+               jump .3s 1.2s ease ;
     
 
 }
