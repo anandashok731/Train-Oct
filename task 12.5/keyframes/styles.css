@@ -38,7 +38,9 @@ html,body{
     left: 0;
     height: 60%;
     animation-name: drive;
-    animation-duration: 7s;
+    animation-duration: 4s;
+    animation-fill-mode: backwards;
+    animation-delay: 2s;
 
 }
 @keyframes drive{
