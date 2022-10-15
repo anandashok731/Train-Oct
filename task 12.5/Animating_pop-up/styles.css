@@ -12,12 +12,12 @@ h1{
   margin: 10px 0;
 }
 p{
-  margin-bottom: 40px;
+  margin-bottom: 15px;
 }
 #pop-up{
   position: relative; 
-  top: 200px; 
-  width: 500px; 
+  top: 250px; 
+  width: 400px; 
   margin: 0 auto; 
   text-align: center;
 }
