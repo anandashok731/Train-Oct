@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Using CSS Grid</title>
+        <style>
+            body{
+                color: #fff;
+                font-family: 'Nunito semibold';
+                text-align: center;
+            }
+            #content{
+                display: grid;
+                max-width: 960px;
+                margin: 0 auto;
+            }
+            #content > *{
+                background: #3bbced;
+                padding: 30px;
+            }
+        </style>
+    </head>
+    <body>
+        <div id="content">
+            
+            <header>Header</header>
+            <main>Main</main>
+            <section>Section</section>
+            <aside>Aside</aside>
+            <nav>Nav</nav>
+            <footer>Footer</footer>
+        </div>
+    </body>
+</html>
