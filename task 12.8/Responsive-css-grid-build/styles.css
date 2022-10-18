@@ -304,6 +304,7 @@ footer img{
   }
   #welcome, #portfolio, #skills, #contacts{
     padding: 90px 0;
+    margin:0 10px;
   }
   .projects a:nth-child(1){
     grid-column: 1/3;
