@@ -3,10 +3,6 @@ body{
     margin: 0;
     padding: 0;
 }
-*{
-    margin: 0;
-    padding: 0;
-}
 
 .main{
     background-image: url(img/banner.webp);
@@ -40,7 +36,8 @@ nav li{
     position: relative;
     bottom: 37pc;
     color: #fff;
-    font-size: 60px;
+    font-size: 2em;
+    overflow: hidden;
 }
 .header{
     text-align: center;
@@ -51,61 +48,21 @@ nav li{
     overflow: hidden;
 }
 footer{
+    display: flex;
     background-color: rgb(25,25,25);
 }
 .footer{
     display: flex;
+    grid-template-columns: repeat(3,auto);
     flex-wrap: wrap;
+    column-count: 3;
     padding: 20px 100px;
 }
 .footer h4{
     color: #fff;
 }
 .footer a{
-    margin:5px 0;
     color:grey;
     list-style-type: none;
     text-decoration: none;
-}
-.cities div{
-    display: flex;
-    flex-direction: column;
-    align-items: justify;
-    flex-wrap: wrap;
-    height: 35%;
-    width: 500px;
-}
-.cities p{
-    margin: 5px 0;
-}
-.cuisine div{
-    display: flex;
-    flex-direction: column;
-    align-items: justify;
-    flex-wrap: wrap;
-    height: 35%;
-    width: 500px;
-}
-.cuisine p{
-    margin: 5px;
-}
-.about div{
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;
-    flex-wrap: wrap;
-    width: 200px;
-}
-.help div{
-    display: flex;
-    flex-direction: column;
-    align-items: justify;
-    flex-wrap: wrap;
-    width: 200px;
-}
-.business div{
-    display: flex;
-    flex-direction: column;
-    align-items: justify;
-    flex-wrap: wrap;
 }
