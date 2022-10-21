@@ -1,30 +1,100 @@
 body{
+    width: 100%;
     margin: 0;
     padding: 0;
 }
+
 .main{
-    padding: 14px 15px 0 0;
-    display: flex;
-    flex-direction: row;
-    justify-content: flex-end;
-    height: 26pc;
-    position: relative;
-    background-size: cover;
-    background-repeat: no-repeat;
     background-image: url(img/banner.webp);
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+    height: 37pc;
 }
-.signin {
-    width: 100%;
+nav ul{
+    list-style-type: none;
+    padding: 0;
+
 }
-.social{
+nav a{
+    text-decoration: none;
+    text-align: center;
+    color: white;
     display: flex;
-    flex-direction: row;
+    padding: 10px;
+    margin: 0 auto;
+}  
+nav li{
+    display: inline-block;
+    float: right;
+}
+.doordash{
+    width: 100%;
+    display: flex;
     align-items: center;
-    gap: 15px;
+    justify-content: center;
+    position: relative;
+    bottom: 37pc;
+    color: #fff;
+    font-size: 60px;
+}
+.header{
+    text-align: center;
+    position: relative;
+    bottom: 30pc;
+    font-size: 4pc;
+    color: #FFF;
+    overflow: hidden;
 }
 footer{
+    background-color: rgb(25,25,25);
+}
+.footer{
+    display: flex;
+    flex-wrap: wrap;
+    padding: 20px 100px;
+}
+.footer h4{
+    color: #fff;
+}
+.footer a{
+    color:grey;
+    list-style-type: none;
+    text-decoration: none;
+}
+.cities div{
     display: flex;
     flex-direction: column;
-    align-items: center;
-    background-color: rgb(25,25,25);
+    align-items: justify;
+    flex-wrap: wrap;
+    height: 35%;
+    width: 500px;
+}
+.cuisine div{
+    display: flex;
+    flex-direction: column;
+    align-items: justify;
+    flex-wrap: wrap;
+    height: 35%;
+    width: 500px;
+}
+.about div{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    flex-wrap: wrap;
+    width: 200px;
+}
+.help div{
+    display: flex;
+    flex-direction: column;
+    align-items: justify;
+    flex-wrap: wrap;
+    width: 200px;
+}
+.business div{
+    display: flex;
+    flex-direction: column;
+    align-items: justify;
+    flex-wrap: wrap;
 }
