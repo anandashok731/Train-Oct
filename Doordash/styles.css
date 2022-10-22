@@ -7,40 +7,41 @@ body{
     margin: 0;
     padding: 0;
 }
-
 .main{
     background-image: url(img/banner.webp);
     background-repeat: no-repeat;
     background-size: cover;
     position: relative;
     height: 37pc;
+    overflow: hidden;
 }
-nav ul{
-    list-style-type: none;
-    padding: 0;
-
-}
-nav a{
-    text-decoration: none;
-    text-align: center;
-    color: white;
-    display: flex;
-    padding: 10px;
-    margin: 0 auto;
-}  
-nav li{
-    display: inline-block;
-    float: right;
-}
-.doordash{
+.main-sign{
     width: 100%;
-    display: flex;
+}
+.sign{
+    padding: 14px 15px 0 0;
+    display:flex;
+    flex-direction: row;
     align-items: center;
-    justify-content: center;
-    position: relative;
-    bottom: 37pc;
-    color: #fff;
-    font-size: 60px;
+    justify-content: flex-end;
+    gap: 10px;
+}
+.main-sign div{
+    font-family: "DD-TTNorms";
+    font-weight: 500px;
+}
+.signin{
+    font-size: 19px;
+    color: rgb(235, 236, 238);
+}
+.signup{
+    background-color: rgb(235, 236, 238);
+    border-radius: 19px;
+    padding:5px 10px 5px 10px;
+}
+.signup div{
+    font-size: 17px;
+    color:rgb(87, 74, 74);
 }
 .header{
     text-align: center;
@@ -48,7 +49,81 @@ nav li{
     bottom: 30pc;
     font-size: 4pc;
     color: #FFF;
-    overflow: hidden;
+    gap: 15px;
+}
+.doordash{
+    text-align: center;
+    color: white;
+    font-size: 35px;
+    margin: -30px;
+}
+input{
+    width: 400px;
+    height: 40px;
+    font-size: 25px;
+    border:none;
+    border-radius: 26px;
+}
+.link a{
+    font-size: 18px;
+    color: white;
+}
+#block{
+    margin: 0 100px;
+    width: 75%;
+    column-count: 3;
+    column-gap: 100px;
+}
+.banner h2{
+    font-size: 28px;
+}
+.banner p{
+    text-align: center;
+    width: 200px;
+}
+.banner a{
+    text-decoration: none;
+    color: red;
+}
+.table{
+    width: 100%;
+    margin:0;
+}
+.table h2{
+    font-size: 28px;
+}
+.table a{
+    text-decoration: none;
+    color: white;
+    border: 2px solid red;
+    background-color: red;
+    border-radius: 22px;
+}
+.table1{
+    position: relative;
+    top: 400px;
+    width: 330px;
+    left: 50px;
+}
+.table2{
+    float: right;
+    position: relative;
+    top: 750px;
+    left: 600px;
+}
+.table2 p{
+    width: 300px;
+}
+.img1{
+    float: right;
+    position: relative;
+    right: 70px;
+    bottom: 70px;
+}
+.img2{
+    max-width: 90%;
+    position: relative;
+    left: 80px;
 }
 footer{
     background-color: rgb(25,25,25);
@@ -56,13 +131,15 @@ footer{
 .footer{
     display: flex;
     flex-wrap: wrap;
-    padding: 20px 100px;
+    padding: 20px 50px 0 140px;
+    max-width: 100%;
 }
 .footer h4{
+    margin: 10px;
     color: #fff;
 }
 .footer a{
-    margin:5px 0;
+    margin:5px 10px;
     color:grey;
     list-style-type: none;
     text-decoration: none;
@@ -87,7 +164,7 @@ footer{
     width: 500px;
 }
 .cuisine p{
-    margin: 5px;
+    margin: 5px 0;
 }
 .about div{
     display: flex;
@@ -96,6 +173,9 @@ footer{
     flex-wrap: wrap;
     width: 200px;
 }
+.about p{
+    margin: 5px 0;
+}
 .help div{
     display: flex;
     flex-direction: column;
@@ -103,9 +183,32 @@ footer{
     flex-wrap: wrap;
     width: 200px;
 }
+.help p{
+    margin: 5px 0;
+}
 .business div{
     display: flex;
     flex-direction: column;
     align-items: justify;
     flex-wrap: wrap;
+}
+.business{
+    margin: 5px 0;
+}
+.last{
+    text-decoration: none;
+    text-align: center;
+    display: block;
+    padding: 45px;
+    color: grey;
+}
+.last a{
+    text-decoration: none;
+    color: grey;
+}
+.social a span{
+    float:right;
+}
+.social img{
+    max-width: 60%;
 }
