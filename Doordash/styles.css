@@ -112,18 +112,19 @@ input{
     left: 600px;
 }
 .table2 p{
-    width: 300px;
+    width: 320px;
 }
 .img1{
     float: right;
     position: relative;
     right: 70px;
-    bottom: 70px;
+    bottom: 120px;
 }
 .img2{
     max-width: 90%;
     position: relative;
     left: 80px;
+    bottom: 70px;
 }
 footer{
     background-color: rgb(25,25,25);
@@ -212,3 +213,4 @@ footer{
 .social img{
     max-width: 60%;
 }
+
