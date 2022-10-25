@@ -14,7 +14,7 @@ header{
     font-size: 12.8px;
     color: #000;
     letter-spacing: 1px;
-    margin: -95px 30px 0 0;
+    margin: -120px 25px 0 0;
 }
 header span{
     padding: 15px;
@@ -38,7 +38,7 @@ div ul{
 .main-nav ul{
     display: grid;
     grid-template-columns: repeat(9,1fr);
-    margin: 9% 80px 20px 27%;
+    margin: 9% 80px 20px 26%;
     column-gap: 0px;
 }
 /*div.main-nav ul li img:hover{
@@ -65,7 +65,7 @@ div ul{
 form{
     position: fixed;
     border: 2px solid #fc0;
-    margin: -15px 15% 0 28%;
+    margin: -15px 15% 0 24%;
     border-radius: 10px;
     background-color:#fc0;
     width: 63%;
@@ -93,9 +93,12 @@ button{
     border-radius: 23px;
     color: #000;
 }
+button:hover{
+    cursor: pointer;
+}
 
 #search img{
-    margin-left: 18.5%;
+    margin-left: 15.5%;
 }
 .images img{
     position: relative;
