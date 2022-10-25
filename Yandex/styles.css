@@ -41,16 +41,22 @@ div ul{
     margin: 8% 90px 40px 26%;
     column-gap: 0px;
 }
-div.main-nav ul li img:hover{
+/*div.main-nav ul li img:hover{
     cursor: pointer;
     position: relative;
     top: -4px;
-}
+}*/
 .main-nav ul span{
     margin: 6% 10px 52px 22%;
     border-left: -25px;
+    justify-content:flex-start;
 }
 .main-nav ul li:hover{
+    cursor: pointer;
+    color: red;
+}
+.main-nav ul li:hover img{
+    transform: translateY(-3px);
     cursor: pointer;
     color: red;
 }
@@ -59,14 +65,14 @@ div.main-nav ul li img:hover{
 }
 form{
     position: fixed;
-    border: 1px solid #fc0;
+    border: 2px solid #fc0;
     margin: -15px 15% 0 28%;
     border-radius: 10px;
     background-color:#fc0;
     width: 63%;
 }
 input{
-    width: 86%;
+    width: 89%;
     border: none;
     font-size: 30px;
     background-color: white;
