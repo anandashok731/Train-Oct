@@ -54,6 +54,9 @@ li a{
     text-align: center;
     color: white;
 }
+.login li a{
+    color: rgb(35, 35, 190);
+}
 a:hover{
     cursor: pointer;
     color: red;
@@ -64,7 +67,7 @@ a:hover{
     right: 10px;
     text-align: center;
     font-size: 39px;
-    font-weight: 999;
+    font-weight: 900;
     color: rgb(253, 250, 44);
     font-family: monospace;
 }
@@ -128,8 +131,4 @@ input{
 @keyframes foot{
     from{opacity: 0;}
     to{opacity: 2;}
-}
-/* Media Queries*/
-@media screen and (max-width:960px){
-
 }
