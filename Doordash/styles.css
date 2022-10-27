@@ -1,0 +1,279 @@
+body{
+    margin: 0;
+    padding: 0;
+    max-width: 100%;
+}
+*{
+    margin: 0;
+    padding: 0;
+}
+.main{
+    background-image: url(https://img.cdn4dd.com/cdn-cgi/image/fit=cover,width=800,format=auto,quality=60/https://cdn.doordash.com/media/consumer/home/landing/new/hero_landing_us_mobile.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100vw;
+    height: 102vh;
+    background-position-x: center;
+}
+.main-sign{
+    position: relative;
+    width: 100%;
+    left: -20px;
+    top: 20px;
+}
+.sign{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-end;
+    gap: 10px;
+    font-size: 22px;
+}
+.main-sign-div{
+    font-weight: 500;
+}
+.signin{
+    font-size: 18px;
+    color: #FFFFFF;
+}
+.signup{
+    background-color: #FFFFFF;
+    border-radius: 16px;
+    padding: 5px 10px 5px 10px;
+}
+signup div{
+    font-size: 16px;
+    font-family: DD-TTNorms, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+    color: #494949;
+}
+.doordash{
+    color: transparent;
+}
+.doordash img{
+    position :relative;
+    top: 50px;
+    left: 148px;
+    text-align: center;
+    color: transparent;
+    font-size: 35px;
+    font-family: DD-TTNorms, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+}
+.header-1{
+    position: relative;
+    top: -355px;
+    text-align: center;
+    color: #FFFFFF;
+    font-size: 35px;
+}
+.search{
+    padding: 0;
+    max-width: 315;
+    position: relative;
+    top: -320px;
+    display: flex;
+    flex-flow: column;
+    align-items: center;
+}
+.searchin{
+    padding: 4px 4px 4px 6px;
+    line-height: 22px;
+    font-weight: 500;
+    color: #000;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    border-radius: 22px;
+    z-index: 1;
+    border: none;
+    background-color: #FFFFFF;
+}
+.searchicon{
+    max-width: 100%;
+}
+    input{
+        padding:0;
+        font-size: 16px;
+        border: none;
+}
+.search span{
+    font-size: 16px;
+    margin: 16px;
+    color: #FFFFFF;
+}
+.search span a{
+    color: #FFFFFF;
+}
+.merchant p{
+    position: relative;
+    top: -160px;
+    left: 20px;
+}
+.merchant a{
+    position: relative;
+    top: -200px;
+    left: 190px;
+    text-decoration: none;
+    border: 1px solid #EB1700;
+    background-color: #EB1700;
+    color: #FFFFFF;
+    border-radius: 20px;
+    padding: 10px;
+    font-weight: 800;
+}
+#block{
+    display: flex;
+    width: 100vw;
+}
+#block img{
+    height:88px;
+    width: 88px;
+}
+
+/*
+#block{
+    display: flex;
+    width: 100vw;
+}
+.banner h2{
+    font-size: 32px;
+}
+.banner p{
+    font-size: 18px;
+}
+.banner a{
+    text-decoration: none;
+    color: #EB1700;
+    font-size: 14px;
+}
+.table{
+    width: 50vw;
+}*/
+/*.table{
+    width: 100%;
+    margin:0;
+}
+.table h2{
+    font-size: 28px;
+}
+.table a{
+    text-decoration: none;
+    color: white;
+    border: 2px solid red;
+    background-color: red;
+    border-radius: 22px;
+}
+.table1{
+    position: relative;
+    top: 400px;
+    width: 330px;
+    left: 50px;
+}
+.table2{
+    float: right;
+    position: relative;
+    top: 750px;
+    left: 600px;
+}
+.table2 p{
+    width: 320px;
+}*/
+/*.img1{
+    float: right;
+    position: relative;
+    right: 70px;
+    bottom: 120px;
+}
+.img2{
+    max-width: 90%;
+    position: relative;
+    left: 80px;
+    bottom: 70px;
+}
+footer{
+    background-color: rgb(25,25,25);
+}
+.footer{
+    display: flex;
+    flex-wrap: wrap;
+    padding: 20px 50px 0 140px;
+    max-width: 100%;
+}
+.footer h4{
+    margin: 10px;
+    color: #fff;
+}
+.footer a{
+    margin:5px 10px;
+    color:grey;
+    list-style-type: none;
+    text-decoration: none;
+}
+.cities div{
+    display: flex;
+    flex-direction: column;
+    align-items: justify;
+    flex-wrap: wrap;
+    height: 35%;
+    width: 500px;
+}
+.cities p{
+    margin: 5px 0;
+}
+.cuisine div{
+    display: flex;
+    flex-direction: column;
+    align-items: justify;
+    flex-wrap: wrap;
+    height: 35%;
+    width: 500px;
+}
+.cuisine p{
+    margin: 5px 0;
+}
+.about div{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    flex-wrap: wrap;
+    width: 200px;
+}
+.about p{
+    margin: 5px 0;
+}
+.help div{
+    display: flex;
+    flex-direction: column;
+    align-items: justify;
+    flex-wrap: wrap;
+    width: 200px;
+}
+.help p{
+    margin: 5px 0;
+}
+.business div{
+    display: flex;
+    flex-direction: column;
+    align-items: justify;
+    flex-wrap: wrap;
+}
+.business{
+    margin: 5px 0;
+}
+.last{
+    text-decoration: none;
+    text-align: center;
+    display: block;
+    padding: 45px;
+    color: grey;
+}
+.last a{
+    text-decoration: none;
+    color: grey;
+}
+.social a span{
+    float:right;
+}
+.social img{
+    max-width: 60%;
+}*/
