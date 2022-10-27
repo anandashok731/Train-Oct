@@ -3,7 +3,7 @@
     padding: 0;
 }
 body{
-    font: 0.8em Arial,Helvetica,sans-serif;
+    font: 12.8px Arial,Helvetica,sans-serif;
 }
 header{
     display: flex;
@@ -11,7 +11,7 @@ header{
     align-items: center;
 }
 header span{
-    padding: 20px;
+    padding: 15px;
 }
 header span:hover{
     color: red;
@@ -27,14 +27,19 @@ div ul{
     align-items: center;
     align-content: center;
 }
+.content ul{
+    column-gap: 35px;
+    left: 5px;
+    top: -15px;
+}
 .form{
     border: 1px solid #fc0;
-    
     border-radius: 8px;
     background-color: #fc0;
     display: flex;
     align-items: center;
-    margin-left: 10px;
+    margin-left: 15px;
+    width: 100vw;
 }
 button{
     border: none;
@@ -45,8 +50,8 @@ button{
     font-size: 123.1%;
 }
 input{
-    width: 45vw;
-    border-radius: 8px 0 0 8px;
+    width: 55vw;
+    border-radius: 8px;
     padding: 10px;
     border: none;
     margin-top: 1px;
@@ -72,13 +77,17 @@ svg{
     position: absolute;
     left: 45%;
     right: 45%;
-
     }
-
 .form{
     align-items: center;
 }
-
+#main{
+    margin-top: 4%;
+}
+#main ul li span{
+    display: flex;
+    justify-content: center;
+}
 #main ul li:hover{
     cursor: pointer;
     color: red;
@@ -88,51 +97,9 @@ svg{
     cursor: pointer;
     color: red;
 }
-#main ul li span{
-    display: flex;
-    justify-content: center;
-}
-.footer{
-    margin-top: -60px;
-
-}
-footer ul{
-    text-align: center;
-    bottom: 0;
-}
-
-.footer a{
-    text-decoration: none;
-    color: slategrey;
-}
 a:hover{
     color: red;
     cursor: pointer;
-}
-footer ul span:hover{
-
-    color: red;
-    position: fixed;
-    transform: none;
-    
-}
-footer ul a{
-    text-decoration:none;
-    color: #000;
-    font-size: 15px;
-}
-footer ul p{
-    margin-top: 10px;
-
-}
-footer{
-    position: absolute;
-    bottom: 0;
-    left: 24vw;
-    
-}
-#main{
-    margin-top: 4%;
 }
 svg{
     width: 30px;
@@ -144,11 +111,39 @@ svg:hover{
     opacity: 1;
     cursor: pointer;
 }
-
 .search button:hover{
     background-color: #fc0;
     cursor: pointer;
 }
 .search img:hover{
     cursor: pointer;
+}
+footer{
+    position: absolute;
+    bottom: 0;
+    left: 25vw;
+}
+footer ul{
+    text-align: center;
+    bottom: 0;
+}
+footer ul span:hover{
+    color: red;
+    position: fixed;
+    transform: none;
+}
+footer ul a{
+    text-decoration:none;
+    color: #000;
+    font-size: 12.8px;
+}
+.countries ul{
+    column-gap: 40px;
+}
+.footer{
+    margin-top: -40px;
+}
+.footer a{
+    text-decoration: none;
+    color: slategrey;
 }
