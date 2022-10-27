@@ -82,7 +82,6 @@ signup div{
     display: flex;
     justify-content: center;
     align-items: center;
-    width: 100%;
     border-radius: 22px;
     z-index: 1;
     border: none;
@@ -91,10 +90,10 @@ signup div{
 .searchicon{
     max-width: 100%;
 }
-    input{
-        padding:0;
-        font-size: 16px;
-        border: none;
+input{
+    padding:0;
+    font-size: 16px;
+    border: none;
 }
 .search span{
     font-size: 16px;
@@ -129,23 +128,68 @@ signup div{
     height:88px;
     width: 88px;
 }
-
-/*
-#block{
-    display: flex;
-    width: 100vw;
-}
 .banner h2{
     font-size: 32px;
+    color: #191919;
+    position: relative;
+    top: -80px;
+    left: 100px;
 }
 .banner p{
     font-size: 18px;
+    display: block;
+    text-align: left;
+    text-transform: none;
+    line-height: 26px;
+    letter-spacing: 0.1ch;
+    position: relative;
+    width: 220px;
+    top: -70px;
+    left: 100px;
 }
 .banner a{
+    font-size: 14px;
     text-decoration: none;
     color: #EB1700;
-    font-size: 14px;
+    position: relative;
+    top: -60px;
+    left: 100px;
 }
+/*.dasher p{
+    position: relative;
+    width: 220px;
+    top: -70px;
+    left: 100px;
+}
+.dasher a{
+    position: relative;
+    top: -60px;
+    left: 100px;
+}
+.partner p{
+    position: relative;
+    width: 220px;
+    top: -70px;
+    left: 100px;
+}
+.partner a{
+    position: relative;
+    top: -60px;
+    left: 100px;
+}
+.app p{
+    position: relative;
+    width: 220px;
+    top: -70px;
+    left: 100px;
+}
+.app a{
+    position: relative;
+    top: -60px;
+    left: 100px;
+}*/
+
+/*
 .table{
     width: 50vw;
 }*/

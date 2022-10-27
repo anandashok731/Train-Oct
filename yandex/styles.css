@@ -3,7 +3,7 @@
     padding: 0;
 }
 body{
-    font: 12.8px Arial,Helvetica,sans-serif;
+    font: 12.5px Arial,Helvetica,sans-serif;
 }
 header{
     display: flex;
@@ -82,7 +82,8 @@ svg{
     align-items: center;
 }
 #main{
-    margin-top: 4%;
+    margin-top: 5%;
+    margin-left: 2%;
 }
 #main ul li span{
     display: flex;
