@@ -39,17 +39,17 @@ body{
 }
 ul{
     position: absolute;
-    display: flex;
+    display: grid;
     list-style-type: none;
     text-align: center;
-    font-weight: 600;
-    top: 92px;
-    right: 370px;
-    font-size: 12px;
-    column-gap: 20px;
+    font-weight: 500;
+    left: 50px;
+    top: 120px;
+    font-size: 20px;
+    gap: 15px;
 }
 li{
-    float: right;
+    float:right;
 }
 li a{
     text-decoration: none;
@@ -68,13 +68,13 @@ a:hover{
     top: 10px;
     right: 10px;
     text-align: center;
-    font-size: 39px;
+    font-size: 45px;
     font-weight: 900;
     color: rgb(253, 250, 44);
     font-family: monospace;
 }
 .banner_head{
-    font-size: 22px;
+    font-size: 25px;
     font-family: fantasy;
     width: 30%;
     text-align: center;
@@ -87,7 +87,7 @@ a:hover{
 .banner-info{
     display:flex;
     margin-left: 400px;
-    margin-top: -90px;
+    margin-top: -70px;
     column-gap: 80px;
 }
 .student{
@@ -110,7 +110,8 @@ a:hover{
 }
 .submit{
     position: relative;
-    left: -10px;
+    left: 0px;
+    top: 65px;
     float:right;
 }
 form{
@@ -121,7 +122,7 @@ input{
 }
 .footer{
     position: relative;
-    top: 35px;
+    top: 120px;
     text-align: center;
     font-size: 20px;
     font-weight: 700;
@@ -134,13 +135,19 @@ input{
     from{opacity: 0;}
     to{opacity: 2;}
 }
-/*@media screen and (min-width:375px){
+@media screen and (max-width:375px){
     .header{
-        font-size: 19px;
+        font-size: 1px;
     }
     ul{
-        left: 20px;
-        top: 40px;
+        display: grid;
+        left: 60px;
+        top: 45px;
+        gap: 55px;
+    }
+    li a{
+        font-size: 10px;
+        color: #fc0;
     }
     .banner_head{
         font-size: 18px;
@@ -156,7 +163,138 @@ input{
         top: -30px;
     }
     .footer{
-        top: -15px;
+        top: 10px;
         font-size: 14px;
     }
-}*/
+}
+@media screen and (max-width:460px){
+    .header{
+        font-size: 20px;
+    }
+    ul{
+        display: inline-flex;
+        left: 60px;
+        top: 45px;
+        gap: 30px;
+    }
+    li a{
+        font-size: 12px;
+        color: rgb(245, 243, 236);
+    }
+    .banner_head{
+        font-size: 19px;
+        left: -160px;
+        top: -80px;
+    }
+    .banner-info{
+        margin: 0;
+    }
+    .submit{
+        left: -200px;
+        top: -30px;
+    }
+    .footer{
+        top: -20px;
+        left: -20px;
+        font-size: 16px;
+    }
+}
+@media screen and (max-width:768px){
+    .banner_head{
+        font-size:10px;
+        left: -120px;
+        top: -50px;
+    }
+    .banner-info{
+        font-size: 12px;
+        margin: 50px;
+        margin-top: -20px;
+        margin-left: 450px;
+        width: 80vw;
+    }
+    .submit{
+        left: -180px;
+        top: -10px;
+    }
+}
+@media screen and (max-width:960px){
+    .header{
+        font-size: 45px;
+        left:12px;
+    }
+    ul{
+        display:grid;
+        left: 20px;
+        top: 70px;
+        gap: 15px;
+        text-align: center;
+    }
+    li a{
+        font-size: 12px;
+        color: rgb(245, 243, 236);
+    }
+    .banner_head{
+        font-size: 19px;
+        left: 70px;
+        top: -110px;
+    }
+    .banner-info{
+        position: relative;
+        left: -120px;
+        top: -60px;
+        font-size: 6px;
+    }
+    .marks{
+        width: 50vw;
+        position: relative;
+        top: -30px;
+        left: 40px;
+    }
+    .submit{
+        left: -380px;
+        top: 20px;
+    }
+    .footer{
+        top:-10px;
+        left: 20px;
+        font-size: 20px;
+    }
+}
+/*@media screen and (max-width:1400px){
+    .header{
+        font-size: 50px;
+        left: -160px;
+    }
+    ul{
+        display:flex;
+        left: 400px;
+        top: 95px;
+        gap: 30px;
+    }
+    li a{
+        font-size: 15px;
+        color: rgb(245, 243, 236);
+    }
+    .banner_head{
+        font-size: 19px;
+        left: 0;
+        top: -50px;
+    }
+    .banner-info{
+        position: relative;
+        top: 20px;
+        left: -20px;
+    }
+    .submit{
+        left: -50px;
+        top: 20px;
+    }
+    .footer{
+        top: 50px;
+        left: -80px;
+        font-size: 16px;
+    }
+}
+
+
+
