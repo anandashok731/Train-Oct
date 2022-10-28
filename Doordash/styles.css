@@ -155,6 +155,29 @@ input{
     top: -60px;
     left: 100px;
 }
+.table1 img{
+    width: 80vw;
+    float: right;
+}
+.table2 img{
+    width: 80vw;
+}
+footer{
+    background-color: rgb(25,25,25);
+    padding: 0 30px;
+    line-height: 20px;
+}
+.footer h4{
+    margin: 10px;
+    color: #fff;
+}
+.footer a{
+    margin:5px 10px;
+    color:grey;
+    list-style-type: none;
+    text-decoration: none;
+}
+
 /*.dasher p{
     position: relative;
     width: 220px;
