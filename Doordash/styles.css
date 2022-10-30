@@ -1,8 +1,6 @@
 body{
     margin: 0;
     padding: 0;
-    max-width: 100%;
-    white-space: wrap;
 }
 *{
     margin: 0;
@@ -163,6 +161,10 @@ input::placeholder{
     top: -160px;
     left: 20px;
 }
+svg{
+    position: relative;
+    top:6px;
+}
 .merchant a{
     position: relative;
     top: -200px;
@@ -181,6 +183,7 @@ input::placeholder{
     left: 20px;
     font-family: DD-TTNorms, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
     font-weight: 600;
+    white-space: nowrap;
 }
 #block{
     display: flex;
@@ -243,8 +246,7 @@ input::placeholder{
 }
 .table{
     width: 100%;
-    /* background:rgb(255,240,237) ; */
-    background-color: red;
+    background:rgb(255,240,237) ;
 }
 .table1{
     display: grid;
@@ -298,6 +300,8 @@ input::placeholder{
     font-weight: 600;
     letter-spacing: -0.04ch;
     line-height: 32px;
+    position:relative;
+    left: 10px;
 }
 .table2-content p{
     display: block;
@@ -381,6 +385,7 @@ footer{
     font-size: 14px;
     font-family: DD-TTNorms, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
     font-weight: 500;
+    color: #c4c4c4;
 
 }
 .store{
@@ -400,7 +405,7 @@ footer{
     border: none;
     border-radius: 5px;
     width: auto;
-    opacity: 0.5;
+    opacity: 0.6;
 }
 .section{
     margin-bottom: 20px;
@@ -414,7 +419,7 @@ footer{
     color: #FFFFFF;
     font-size: 16px;
     font-family: DD-TTNorms, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
-    font-weight: 500;
+    font-weight: 600;
 }
 .section a{
     text-align: center;
@@ -465,7 +470,7 @@ footer{
 
 @media screen and (min-width:375px){
     .main{
-        width: 110%;
+        width: 100%;
     }
     .signin{
         font-size: 19px;
@@ -506,22 +511,23 @@ footer{
         font-family: DD-TTNorms, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
         font-weight: 600;
         color: #191919;
-        font-size: 18px;
-        left: 40px;
+        font-size: 17px;
+        /* left: 40px; */
     }
     .merchant a{
-        margin-left: 80px;
+        /* margin-left: 80px; */
+        left: 220px;
     }
     .merchant div{
         font-family: DD-TTNorms, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
         font-weight: 600;
         color: #191919;
         font: 18px;
-        left: 40px;
-        font-size: 18px;
+        /* left: 40px; */
+        font-size: 16px;
     }
     #block{
-        left: 30px;
+        /* left: 30px; */
     }
     #block h2{
        font-size: 32px;
@@ -544,48 +550,28 @@ footer{
      .app-content{
         margin-left: 25px;
      }
-     /* .table{
-        position: relative;
-        left: 35px;
-     }
-     footer{
-        position: relative;
-        left: 35px;
-     } */
-
-    /* 
-    .main-sign{
-        left: -40px;
-        padding: 10px;
-        top: 6px;
-     .dasher-content{
-        margin-left: 25px;
-     .footer{
-        font-size: 18px;
-     }
      .table h2{
         margin-right: -10px;
         margin-bottom: 10px;
         font-size: 24px;
         font-weight: 600;
-
      }
      .table p{
-        font-size: 14px;
+        font-size: 16px;
+        padding: 10px;
      }
      .table2{
-        padding-bottom: 90px;
+        padding-bottom: 50px;
      }
-     .both{
-        position: relative;
-        left: 40px;
-        column-gap: 20px;
+     .table1-content p{
+        width: 72vw;
+        font-size: 14px;
      }
-     .both h4{
-        font-size: 18px;
-        margin-right: 0px;
+     .table2-content h2{
+        font-size: 24px;
      }
-     .bottom{
-        margin-bottom: 20px;
+     .table2-content p{
+        width: 70vw;
+        font-size: 14px;
      }
-    } */
+}
