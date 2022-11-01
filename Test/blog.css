@@ -7,16 +7,19 @@ body{
     padding:0;
     max-width: 100%;
     color: #2b2b2b;
-}
-.header{
-    background-color: bisque;
-    padding-top: 5px;
-    padding-left: 10px;
-    padding-bottom: 1px;
     font-family: font;
 }
-.header p{
-    font-size: 20px;
+.main{
+    background-color: bisque;
+    padding-top: 10px;
+    padding-left: 10px;
+    padding-bottom: 10px;
+    font-family: font;
+    display: flex;
+    justify-content: space-between;
+}
+.header a{
+    justify-content: right;
 }
 .contents{
     font-family: font;

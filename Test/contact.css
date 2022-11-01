@@ -5,7 +5,7 @@
 body{
     margin: 0;
     padding: 0;
-    width: 100%;
+    max-width: 100%;
     font-family: font;
 }
 .header-main{
@@ -52,6 +52,35 @@ ul{
 .messages h2{
     font-weight: 400;
 }
+.input{
+    font: font;
+    margin-top: 20px;
+    margin-left: 350px;
+}
+.input span{
+    color: red;
+}
+input{
+    width: 22%;
+    background-color:rgb(243, 239, 239);
+    border: none;
+}
+textarea{
+    background-color: rgb(243, 239, 239);
+    border: none;
+}
+.submit input{
+    font-family: font;
+    color: white;
+    margin: 0;
+    padding: 10px;
+    width: 7%;
+    background-color: black;
+    position: relative;
+    top: 10px;
+    left: 350px;
+    font-size: 12px;
+}
 .bottom{
     display: flex;
     margin-top: 30px;
@@ -76,6 +105,8 @@ ul{
     line-height: 40px;
 }
 .footer{
+    display: flex;
+    gap: 200px;
     color: #b5b5b5;
     font-size: 12px;
     margin-left: 350px;
@@ -83,3 +114,61 @@ ul{
 .footer a{
     color: #b5b5b5;
 }
+@media screen and (max-width:320px){
+    body{
+        width: 100%;
+    }
+    .header-main{
+        margin-left: -330px;
+        overflow: hidden;
+    }
+    .input{
+        margin-left: 20px;
+    }
+    input{
+        width: 70%;
+    }
+    .submit input{
+        width: 30%;
+        left: 20px;
+    }
+    footer{
+        position: relative;
+        left: -320px;
+    }
+    .footer div{
+        white-space: nowrap;
+    }
+    .footer a{
+        color: transparent;
+    }
+}
+/* @media screen and (max-width:768px){
+    body{
+        width: 100%;
+    }
+    .header-main{
+        margin-left: -330px;
+        overflow: hidden;
+    }
+    .input{
+        margin-left: 300px;
+    }
+    input{
+        width: 28%;
+    }
+    .submit input{
+        width: 12%;
+        left: 300px;
+    }
+    footer{
+        position: relative;
+        left: -50px;
+    }
+    .footer div{
+        white-space: nowrap;
+    }
+    .footer a{
+        color: transparent;
+    }
+} */
