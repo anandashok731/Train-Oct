@@ -358,7 +358,7 @@ footer{
 }
 .footer a{
     margin:5px 10px;
-    padding: 10px 0;
+    /* padding: 32px 0; */
     color:grey;
     list-style-type: none;
     text-decoration: none;
@@ -761,7 +761,6 @@ footer{
     .both{
         display: grid;
         left: -20px;
-        gap: 30px;
     }
     .both h4{
         font-size: 20px;
@@ -774,6 +773,7 @@ footer{
         grid-template-columns: repeat(3,150px);
         column-gap: 120px;
         line-height: 10px;
+        row-gap: -100px;
     }
     .cities a{
         font-size: 18px;
@@ -781,29 +781,5 @@ footer{
     .cities h4{
         position: relative;
         left: -11px;
-    }
-    .cuisine{
-        text-align: start;
-    }
-    .cuisine div{
-        display: grid;
-        grid-template-columns: repeat(2,200px);
-        column-gap: 200px;
-        line-height: 15px;
-    }
-    .cuisine a{
-        font-size: 17px;
-    }
-    .cuisine h4{
-        position: relative;
-        left: -11px;
-    }
-    .section{
-        display: grid;
-        grid-template-columns: repeat(3,150px);
-        column-gap: 180px;
-    }
-    .last{
-        display: flex;
     }
 }
