@@ -1,24 +1,24 @@
 
 @font-face {
-    font-family:DD-TTNorms;
+    font-family: DD-TTNorms;
     src: url(asset/font/TTNorms-Regular.woff2) format("woff2");
     font-weight: 400;
     font-style: normal;
 }
 @font-face {
-    font-family:DD-TTNorms;
+    font-family:  DD-TTNorms;
     src: url(asset/font/TTNorms-Medium.woff2) format("woff2");
     font-weight: 500;
     font-style: normal;
 }
 @font-face {
-    font-family:DD-TTNorms;
+    font-family: DD-TTNorms;
     src: url(asset/font/TTNorms-Bold.woff2) format("woff2");
     font-weight: 600;
     font-style: normal;
 }
 @font-face {
-    font-family:DD-TTNorms;
+    font-family: DD-TTNorms;
     src: url(asset/font/TTNorms-ExtraBold.woff2) format("woff2");
     font-weight: 700;
     font-style: normal;
@@ -27,6 +27,7 @@ body{
     margin: 0;
     padding: 0;
     width: 100% !important;
+    font: DD-TTNorms;
 }
 *{
     margin: 0;
@@ -73,9 +74,6 @@ body{
     font-family: DD-TTNorms, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
     font-weight: 600;
 }
-.doordash{
-    color: transparent;
-}
 .doordash img{
     position :relative;
     top: 58px;
@@ -83,7 +81,10 @@ body{
     text-align: center;
     color: transparent;
     font-size: 35px;
-    font-family: "DD-TTNorms";
+    font-family: DD-TTNorms;
+}
+.heading svg{
+    opacity: 0;
 }
 .header-1{
     display: block;
@@ -190,9 +191,10 @@ svg{
 }
 #block{
     display: flex;
-    width: 100vw;
+    width: 100%;
     position: relative;
     top: -80px;
+    overflow: hidden;
 }
 #block img{
     height:88px;
@@ -206,6 +208,7 @@ svg{
     left: 100px;
     font-family: DD-TTNorms, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
     font-weight: 600;
+    width: 80%;
 }
 .banner p{
     font-size: 18px;
@@ -271,7 +274,7 @@ svg{
 }
 .table1-content p{
     display: block;
-    width: 62vw;
+    width: 90%;
     line-height: 20px;
     letter-spacing: 0ch;
     font-family: DD-TTNorms, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
@@ -313,7 +316,7 @@ svg{
     font-size: 14px;
     font-family: DD-TTNorms, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
     font-weight: 500;
-    width: 62vw;
+    width: 90%;
 }
 .table2-content a{
     position: relative;
@@ -331,11 +334,11 @@ svg{
 .table1 img{
     position: relative;
     top: -130px;
-    width: 80vw;
+    width: 80%;
     float: right;
 }
 .table2 img{
-    width: 80vw;
+    width: 80%;
     position: relative;
     top: -60px;
 }
@@ -344,7 +347,7 @@ footer{
     display: flex;
     flex-direction: column;
     margin: 0;
-    max-width: 1160px;
+    /* max-width: 1160px; */
     background-color: rgb(25,25,25);
     padding: 0 20px;
     line-height: 15px;
@@ -369,8 +372,8 @@ footer{
 .both{
     display: flex;
     text-align: center;
-    column-gap: 10px;
-    line-height: 15px;
+    column-gap: 20px;
+    line-height: 20px;
     margin: 0px 10px 8px;
     padding: 18px 0;
     color: #c4c4c4;
@@ -382,14 +385,17 @@ footer{
 .cuisine h4{
     font-size: 16px;
     line-height: 20px;
-    width: 50vw;
+    width: 100%;
 }
 .both a{
     font-size: 14px;
     font-family: DD-TTNorms, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
     font-weight: 500;
     color: #c4c4c4;
-
+    cursor: pointer;
+    line-height: 18px;
+    letter-spacing: 0ch;
+    text-align: center;
 }
 .store{
     display: flex;
@@ -400,7 +406,7 @@ footer{
     padding-top: 10px;
     padding-bottom: 60px;
 }
-.store img{
+.store svg{
     height: 48px;
     width: 144px;
     border: 1px solid #fff;
@@ -436,20 +442,20 @@ footer{
 .social{
     display: flex;
     justify-content: center;
-    margin-bottom: 20px;
-    column-gap: 10px;
+    column-gap: 9px;
 }
 .social img{
     width: 24px;
     height: 24px;
+    opacity: 0.6;
 }
 .bottom{
-    margin: 35px 0px;
+    margin: 25px 0px;
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
     align-items: center;
-    padding-top: 10px;
+    /* padding-top: 10px; */
     column-gap: 21px;
     row-gap: 1.5px;
 }
@@ -462,9 +468,11 @@ footer{
 .bottomimg{
     width: 32px;
     height: 18px;
+    opacity: 0.9;
 }
 .bottomimg img{
     width: 100%;
+    opacity: 0.8;
 }
 .bottom span{
     color: #c4c4c4;
@@ -473,7 +481,8 @@ footer{
 
 @media screen and (min-width:375px){
     .main{
-        width:105% ;
+        width:105%;
+        background-position-x: 52%;
     }
     .signin{
         font-size: 19px;
@@ -486,15 +495,15 @@ footer{
     .doordash img{
         height: 38px;
         width: 62px;
-        left: 180px;
+        left: 150px;
         top: 60px;
     }
-    .header-1{
+    /* .header-1{
         font-weight: 600;
         font-size: 35px;
-        left: 15px;
+        left: 10px;
         top: -325px;
-    }
+    } */
     .header-1{
         font-weight: 600;
         font-size: 34px;
@@ -518,7 +527,7 @@ footer{
     }
     .merchant a{
         /* margin-left: 80px; */
-        left: 220px;
+        left: 240px;
     }
     .merchant div{
         font-family: DD-TTNorms, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
@@ -606,8 +615,7 @@ footer{
 @media screen and (min-width:425px){
 
     .main{
-        width: 105%;
-      height: 70vh;  
+        width: 10;
     }
     .signin{
         font-size: 16.5px;
@@ -646,6 +654,10 @@ footer{
         position: relative;
         left: 45px;
         width: 90%;
+        left: 20px;
+    }
+    #block h2{
+        font-size: 30px;
     }
     #block p{
         font-size: 16px;
@@ -654,10 +666,13 @@ footer{
     #block img{
         top: 15px;
     } 
+    .banner h2{
+        width: 100%;
+    }
     .table1-content{
         position: relative;
-        left: 35px;
-        width: 65vw;
+        left: 12px;
+        width: 75%;
     }
     .table1-content p{
         position: relative;
@@ -665,18 +680,19 @@ footer{
     }
     .table2-content{
         position: relative;
-        left: 35px;
-        width: 65vw;
+        left: 12px;
+        width: 75%;
     }
     .both{
         position: relative;
         left: 25px;
-        width: 60%;
+        width: 91%;
+        gap: 50px;
     }
 }
 @media screen and (min-width:768px){
     .main{
-        height: 78vh;
+        /* height: 75; */
         width: 115%;
     }
     .signin{
@@ -753,10 +769,34 @@ footer{
         width: 115vw;
     }
     .table img{
-        width: 530px;
+        width: 500px;
+    }
+    .table1-content{
+        position: relative;
+        top: -490px;
+        left: 55px;
+    }
+    .table1-content h2{
+        line-height: 30px;
+        width:35%;
+        font-size: 28px;
+    }
+    .table1-content p{
+        width: 40%;
+        font-size: 18px;
+    }
+    .table2-content{
+        margin-left: 110px;
+    }
+    .table2-content h2{
+        width: 35%;
+    }
+    .table2-content p{
+        width: 40%;
+        font-size: 18px;
     }
     footer{
-        width: 110vw;
+        width: 110%;
     }
     .both{
         display: grid;
@@ -773,7 +813,7 @@ footer{
         display: grid;
         grid-template-columns: repeat(3,150px);
         column-gap: 120px;
-        line-height: 10px;
+        line-height: 5px;
     }
     .cities a{
         font-size: 18px;
@@ -803,7 +843,50 @@ footer{
         grid-template-columns: repeat(3,150px);
         column-gap: 180px;
     }
+    .section a{
+        font-size: 17px;
+        text-align: start;
+        left: 20px;
+    }
     .last{
         display: flex;
+        flex-direction: row-reverse;
+        justify-content: space-between;
+        padding-bottom: 10px;
+    }
+    .social{
+        position: relative;
+        top: 15px;
+    }
+}
+@media screen and (min-width:1024px){
+    .heading svg{
+        opacity: 3;
+        position: relative;
+        left: 510px;
+        top: -45px;
+        width: 200px;
+    }
+    .doordash img{
+        top: -15px;
+        left: 470px;
+    }
+    .header-1{
+        font-size: 70px;
+        width: 85%;
+        line-height: 70px;
+        top: -520px;
+        left: 140px;
+    }
+    button.searchin{
+        top: -100px;
+        width: 45%;
+        left: 70px;
+    }
+    .search span a{
+        top: -100px;
+    }
+    .merchant p{
+        width: 23%;
     }
 }
