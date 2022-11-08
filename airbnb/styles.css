@@ -31,52 +31,138 @@ body{
 .header{
     padding: 14px 24px 0 24px;
 }
+.logo{
+    display: none;
+}
 .searchbar{
+    width: 100%;
     display: flex;
     background: #fff;
     border: 0.5px solid hsl(0deg 0% 0% / 8%);
     box-shadow: 0 3px 10px rgb(0 0 0 / 10%);
     transform: translate3d(0,0,0);
-    border-radius: 100px;
-    padding: 14px 24px 0 24px;
+    border-radius: 30px;
+    margin: 0 50px;
+    padding: 0px 20px 5px 20px;
     justify-content: space-between;
     margin-left: 0;
+    min-width: 290px;
 }
-.searchin{
+.searching{
     display: flex;
 }
-.icon svg{
+.searchicon{
+    padding-left: 10px;
+}
+.searchicon svg{
     position: relative;
     left: -10px;
-    top: 10px;
+    top: 20px;
 }
-.whereto{
+.container{
+    display: flex;
+    flex-direction: column;
+    min-width: 0;
+    padding-left: 2px;
+    margin-top: 10px;
+    margin-left: 0px;
+}
+.container_1{
     font-size: 14px;
     font-weight: 600;
     line-height: 20px;
     color: #222;
 }
-.whereto span{
+.conatiner_2{
+    display: flex;
+    font-size: 12px;
+    color: #717171;
     overflow: hidden;
-    text-overflow: ellipsis;
     white-space: nowrap;
-    margin-left: 20px;
+}
+.conatiner_2 div{
+    display: flex;
+}
+.conatiner_2 p{
+    text-overflow: ellipsis;
+    overflow: hidden;
+    width: 53px;
+    white-space: nowrap;
+    margin-right: 8px;
+    padding-top: 1px;
 }
 button{
     border: none;
     background-color: #fff;
 }
-.search-sub{
-    font-size: 12px;
-    color: #717171;
-    white-space: nowrap;
-}
 button.menubar{
     border: 1px solid #ddd;
-    background-color: red;
+    background-color: #fff;
     border-radius: 100px;
-    margin: 11px 10px;
-    padding: 7px;
-    border: none;
+    margin:10px ;
+    padding: 8px;
 }
+@media screen and (min-width:375px){
+    
+    .searchbar{
+        padding-bottom: 0;
+    }.container{
+        margin-left: 4px;
+    }
+    .conatiner_2{
+        padding-right: 20px;
+    }
+    .conatiner_2 p{
+        width: 56.13px;
+        overflow: visible;
+    }
+    .menubar{
+        position: relative;
+        left: 5px;
+    }
+}
+@media screen and (min-width:425px){
+    .menubar{
+        left: 20px;
+    }
+}
+@media screen and (min-width:744px){
+    .header{
+        width: 744px;
+        height: 80px;
+    }
+    .logo{
+        display: flex;
+        position: relative;
+        top: 15px;
+    }
+    .searchicon,.container_1,.menubar{
+        display: none;
+    }
+    .searchbar{
+        width:400px;
+        height: 48px;
+        position: relative;
+        left: 50px;
+        top: -25px;
+    }
+    .conatiner_2 div{
+        column-gap: 10px;
+    }
+    .conatiner_2 p{
+        font-size: 14px;
+        color: #222;
+        font-weight: 500;
+        border-right:1px solid #717171 ;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        width: 65px;
+    }
+    .conatiner_2 p.guest{
+        border: none;
+        width: 70px;
+        color: #717171;
+        font-weight: 400;
+    }
 
+}
