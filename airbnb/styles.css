@@ -107,6 +107,40 @@ body{
     height: 12px;
     margin-top: 9px;
 }
+.scrollbar{
+    display: flex;
+    gap: 20px;
+    overflow: scroll;
+    overflow-y: hidden;
+    padding: 10px 24px;
+}
+.link{
+    display: flex;
+    flex-flow: column;
+    align-items: center;
+    gap: 4px;
+}
+.scrollbar img{
+    width: 24px;
+    height: 24px;
+    opacity: 0.5;
+}
+.scrollbar a{
+    text-decoration: none;
+    font-size: 12px;
+    white-space: nowrap;
+    line-height: 16px;
+    color: #717171;
+}
+.scrollbar a:hover{
+    cursor: pointer;
+    text-decoration: underline;
+    color: #000;
+    font-weight: 500;
+}
+.scroll_next{
+    display: none;
+}
 @media screen and (min-width:375px){
     .container_2{
         width: 100%;
@@ -217,6 +251,11 @@ body{
         border: 1px solid #ddd;
         padding: 5px 5px 5px 12px;
         column-gap: 12px;
+    }
+    .scroll_next{
+        display: flex;
+        justify-content: center;
+        align-items: center;
     }
 }
 @media screen and (min-width:768px){
