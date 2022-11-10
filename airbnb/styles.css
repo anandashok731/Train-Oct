@@ -28,84 +28,95 @@ body{
 *, *:before, *:after{
     box-sizing: border-box;
 }
-.main_header{
-    width: 100%;
+.header{
     padding: 14px 24px 0 24px;
-    cursor: pointer;
 }
-.header_2{
+.logo{
     display: none;
 }
-.header_content{
-    display: flex;
-    border: 0.5px solid rgba(0,0,0,0.8);
-    border: none;
-    box-shadow:0 3px 10px rgb(0 0 0 / 10%) ;
-    border-radius: 100px;
-    transform: translate3d(0,0,0);
-    color: #000;
+.searchbar{
     width: 100%;
-    height: 54px;
-    padding: 0 20px 5px 20px;
-    min-width: 280px;
-    margin-left: 0;
-    align-items: stretch;
-    justify-content: space-between;
-}
-.search_icon{
-    padding: 19px 15px 0px 0px;
-}
-.search_icon svg{
-    width: 16px;
-    height: 16px;
-}
-.search{
     display: flex;
+    background: #fff;
+    border: 0.5px solid hsl(0deg 0% 0% / 8%);
+    box-shadow: 0 3px 10px rgb(0 0 0 / 10%);
+    transform: translate3d(0,0,0);
+    border-radius: 30px;
+    margin: 0 50px;
+    padding: 0px 20px 5px 20px;
+    justify-content: space-between;
+    margin-left: 0;
+    min-width: 284px;
+    height: 54px;
+}
+.header_1{
+    display: flex;
+}
+.searchicon{
+    padding-left: 10px;
+}
+.searchicon svg{
+    position: relative;
+    left: -10px;
+    top: 20px;
 }
 .container{
     display: flex;
     flex-direction: column;
     min-width: 0;
     padding-left: 2px;
-    padding-top: 9px;
+    margin-top: 7px;
+    margin-left: 5px;
 }
 .container_1{
     font-size: 14px;
-    font-weight: 500;
-    color: #222;
+    font-weight: 600;
     line-height: 20px;
+    color: #222;
 }
-.container_2{
+.conatiner_2{
+    display: flex;
     font-size: 12px;
-    line-height: 16px;
     color: #717171;
-    display: flex;
-    width: 85%;
 }
-.container_2 span{
-    white-space: nowrap;
-    overflow: hidden;
+.conatiner_2 div{
+    display: flex;
+}
+.conatiner_2 span{
     text-overflow: ellipsis;
+    overflow: hidden;
+    white-space: nowrap;
+    padding-top: 1px;
+    width: 50px;
 }
-.header button{
-    display: flex;
-    height: 36px;
-    padding: 0 9px;
-    border: 1px solid #ddd;
-    border-radius: 100px;
-    background-color: #fff;
-    margin: 10px;
-    margin-left: 0px;
-}
-.menubar{
-    display: flex;
-    margin-left: 5px;
-    width: 54px;
-}
-.header button svg{
+.conatiner_2 p{
     width: 12px;
-    height: 12px;
-    margin-top: 9px;
+    font-size: 12px;
+    position: relative;
+    top: -2px;
+}
+button{
+    border: none;
+    background-color: #fff;
+}
+button.menubar{
+    border: 1px solid #ddd;
+    background-color: #fff;
+    border-radius: 1000px;
+    margin: 5px;
+    padding: 9px;
+    position: relative;
+    top: 3px;
+    left: 5px;
+}
+.main_header{
+    display: none;
+}
+.header_2{
+    display: none;
+}
+.left_arrow{
+    display: none;
 }
 .scrollbar{
     display: flex;
@@ -119,11 +130,12 @@ body{
     flex-flow: column;
     align-items: center;
     gap: 4px;
+    margin-left: 3px;
 }
 .scrollbar img{
     width: 24px;
     height: 24px;
-    opacity: 0.5;
+    opacity: 0.8;
 }
 .scrollbar a{
     text-decoration: none;
@@ -142,160 +154,227 @@ body{
     display: none;
 }
 @media screen and (min-width:375px){
-    .container_2{
-        width: 100%;
+    .conatiner_2 div{
+        width: 215px;
+    } 
+    .conatiner_2 span{
+        width: 57px;
     }
-    .menubar{
-        margin-left: 50px;
+    span.guest{
+        width: 63px;
     }
 }
 @media screen and (min-width:425px){
-    .menubar{
-        margin-left: 100px;
-    }
+    .conatiner_2 div{
+        width: 265px;
+    } 
 }
 @media screen and (min-width:744px){
-    .main_header{
-        width: 100%;
-        height: 80px;
-        border-bottom: 1px solid #ddd;
-    }
-    .header{
-        display: none;
-    }
-    .header_2{
-        display: flex;
-        justify-content: space-between;
-        padding-left:0px;
-        margin-top: 1px;
-    }
-    .header_2_content{
-        display: flex;
-        gap: 25px;
-        padding-left: 25px;
-        width: 55%;
-    }
-    .logo{
-        display: flex;
-        margin-left: -5px;
-        margin-top: 8px;
-    }
-    .logo_2{
-        display: none;
-    }
-    .searchbar{
-        display: flex;
-        justify-content: center;
-        background: #fff;
-        border: 0.5px solid hsl(0deg 0% 0% / 8%);
-        box-shadow: 0 3px 10px rgb(0 0 0 / 10%);
-        transform: translate3d(0,0,0);
-        border-radius: 30px;
-        height: 46px;
-        width: 90%;
-        gap: 10px;
-        padding-left: 20px;
-    }
-    .searchbar a{
-        overflow: hidden;
-        text-overflow: ellipsis;
-        white-space: nowrap;
-        height: 20px;
-        font-size: 14px;
-        width: 90px;
-        text-decoration: none;
-        margin-top: 13px;
-        margin-right: 10px;
-        color: #222;
-        border-right: 1px solid #ddd;
-        font-weight: 500;
-        padding-right: 10px;
-    }
-    .searchicon{
-        display: flex;
-    }
-    .searchicon span img{
-        border-radius: 100px;
-        background-color: #ff385c;
-        margin: 7px 10px 0px 0px;
-        width: 32px;
-        height: 32px;
-        padding: 9px;
-    }
-    .searchicon a{
-        color: #717171;
-        font-weight: 400;
-        width: 75px;
-        height: 20px;
-        border-right: none;
-    }
-    .profile{
-        display: flex;
-        align-items: center;
-        column-gap: 15px;
-    }
-    .profile a{
-        text-decoration: none;
-        color: #222;
-        font-weight: 500;
-        white-space: nowrap;
-        font-size: 14px;
-    }
-    .profile button{
-        display: flex;
-        width: 77px;
-        height: 42px;
-        align-items: center;
-        background-color: #fff;
-        border-radius: 20px;
-        border: 1px solid #ddd;
-        padding: 5px 5px 5px 12px;
-        column-gap: 12px;
-    }
-    .scroll_next{
-        display: flex;
-        justify-content: center;
-        align-items: center;
-    }
+ .search{
+    display: none;
+ }
+ .header{
+    height: 80px;
+    border-bottom: 1px solid #d8d6d6;
+ }
+ .header_2{
+    display: flex;
+    justify-content: space-between;
+    padding-left:0px;
+    margin-top: 1px;
 }
-@media screen and (min-width:768px){
-.searchbar a{
-    overflow: visible;
-    padding-right: 0px;
+.header_2_content{
+    display: flex;
+    gap: 25px;
+    padding-left: 25px;
+    width: 55%;
+}
+.logo{
+    display: flex;
+    margin-left: -5px;
+    margin-top: 8px;
+}
+.logo_2{
+    display: none;
+}
+.search_bar{
+    display: flex;
+    justify-content: center;
+    background: #fff;
+    border: 0.5px solid hsl(0deg 0% 0% / 8%);
+    box-shadow: 0 3px 10px rgb(0 0 0 / 10%);
+    transform: translate3d(0,0,0);
+    border-radius: 30px;
+    height: 46px;
+    width: 90%;
+    gap: 10px;
+    padding-left: 20px;
+}
+.search_bar a{
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    height: 20px;
+    font-size: 14px;
+    width: 90px;
+    height: 18px;
+    text-decoration: none;
+    margin-top: 13px;
+    margin-right: 10px;
+    color: #222;
+    border-right: 1px solid #ddd;
+    font-weight: 500;
+    padding-right: 10px;
+}
+.searchicon{
+    display: flex;
 }
 .searchicon span img{
-    margin-left: 40px;
+    border-radius: 100px;
+    background-color: #ff385c;
+    margin: 7px 10px 0px 0px;
+    width: 32px;
+    height: 32px;
+    padding: 9px;
+}
+.searchicon a{
+    color: #717171;
+    font-weight: 400;
+    width: 75px;
+    height: 20px;
+    border-right: none;
+}
+.profile{
+    display: flex;
+    align-items: center;
+    column-gap: 15px;
+}
+.profile a{
+    text-decoration: none;
+    color: #222;
+    font-weight: 600;
+    white-space: nowrap;
+    font-size: 14px;
+}
+.profile button{
+    display: flex;
+    width: 77px;
+    height: 42px;
+    align-items: center;
+    background-color: #fff;
+    border-radius: 20px;
+    border: 1px solid #ddd;
+    padding: 5px 5px 5px 12px;
+    column-gap: 12px;
+}
+.scrollbar{
+    background-color: #fff;
+    gap: 35px;
+    padding: 30px 40px 0 40px;
+    width: 77%;
+    height: 100px;
+    z-index: 1;
+}
+.link{
+    gap: 10px;
+}
+.scroll_next{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+    right: 40px;
+    gap: 20px;
+    top: 115px;
+}
+.next svg
+{
+    width: 12px;
+    height: 12px;
+}
+.next button{
+    border-radius: 50%;
+    padding: 7px;
+    background-color: #fff;
+    border: 1px solid rgb(0 0 0 / 0.3);
+}
+.filter{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 15px 16px;
+    border: 1px solid #ddd;
+    border-radius: 12px;
+    background-color: #fff;
+    gap: 8px;
+    z-index: 2;
+}
+.filter span{
+    font-size: 12px;
+    font-weight: 500;
+    line-height: 16px;
+    color: #222;
 }
 }
-@media screen and (min-width:950px){
-    .searchbar_header{
-       margin-left: 160px;
+@media screen and (min-width:768px){
+    .search_bar_header{
+        min-width: 380px;
     }
-}
-@media screen and (min-width:1024px){
-    .searchbar_header{
-        margin-left: 230px;
-     }
-     .searchbar a{
-        padding-right: 10px;
-     }
-     .searchicon span{
-        padding-right: 8px;
-     }
-}
-@media screen and (min-width:1128px){
-    .logo_1{
-        display: none;
+    .search_bar a{
+        overflow: visible;
+        padding-right: 0px;
     }
-    .logo_2{
-        display: flex;
+    .searchicon{
+        width: 240px;
     }
-}
-@media screen and (min-width:1440px){
-    .header_2{
-        padding: 0 40px;
+    .searchicon span{
+        margin-left: -30px;
     }
-    .header_2_content{
-        gap: 150px;
+    .searchicon span img{
+        margin-left: 40px;
     }
-}
+    .profile{
+        margin-left: -15px;
+        gap: 20px;
+    }
+    }
+    @media screen and (min-width:950px){
+        .search_bar_header{
+           margin-left: 160px;
+        }
+    }
+    @media screen and (min-width:1024px){
+        .search_bar_header{
+            margin-left: 250px;
+         }
+         .search_bar a{
+            padding-left: 8px;
+         }
+         .searchicon span{
+            padding-right: 8px;
+         }
+    }
+    @media screen and (min-width:1128px){
+        .logo_1{
+            display: none;
+        }
+        .logo_2{
+            display: flex;
+        }
+    }
+    @media screen and (min-width:1440px){
+        .header_2{
+            padding: 0 40px;
+        }
+        .header_2_content{
+            gap: 150px;
+        }
+        .search_bar_header{
+            position: relative;
+            left: -32px;
+        }
+        .profile{
+            position: relative;
+            left: 30px;
+        }
+    }
