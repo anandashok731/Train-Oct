@@ -353,6 +353,9 @@ button.menubar{
          .searchicon span{
             padding-right: 8px;
          }
+         .scrollbar{
+            width: 82.5%;
+         }
     }
     @media screen and (min-width:1128px){
         .logo_1{
@@ -360,6 +363,20 @@ button.menubar{
         }
         .logo_2{
             display: flex;
+        }
+        .scrollbar{
+            width: 84.5%;
+         }
+    }
+    @media screen and (min-width:1360px){
+        .search_bar{
+            margin-left: 80px;
+        }
+        .profile{
+            margin-left: 270px;
+        }
+        .scrollbar{
+            width: 87.5%;
         }
     }
     @media screen and (min-width:1440px){
@@ -375,6 +392,9 @@ button.menubar{
         }
         .profile{
             position: relative;
-            left: 30px;
+            left: -210px;
+        }
+        .scrollbar{
+            width: 87.5%;
         }
     }
