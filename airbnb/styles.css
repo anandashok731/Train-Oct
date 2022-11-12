@@ -46,7 +46,7 @@ body{
     border-radius: 30px;
     padding: 0px 20px 5px 20px;
     position: fixed;
-    z-index: 2;
+    z-index: 1;
     justify-content: space-between;
     margin-left: 0;
     min-width: 284px;
@@ -206,7 +206,7 @@ button.menubar{
     line-height: 20px;
 }
 .rate p {
-    color: #222222;
+    color: #222;
     font-size: 15px;
     padding-top: 7px;
 }
@@ -219,7 +219,7 @@ button.menubar{
     align-items: center;
     gap: 10px;
     border-radius: 19px;
-    background: #222222;
+    background: #222;
     height: 38px;
     width: 80px;
     position: fixed;
@@ -247,7 +247,7 @@ button.menubar{
     background-color: #fff;
     bottom: 0;
     z-index: 1;
-    border-top: 1px solid #d6d6d6d6d6;
+    border-top: 1px solid #d6d6d6;
 }
 .explore{
     display: flex;
