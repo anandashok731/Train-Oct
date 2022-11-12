@@ -247,7 +247,7 @@ button.menubar{
     background-color: #fff;
     bottom: 0;
     z-index: 1;
-    border-top: 1px solid #d6d6d6d6d6;
+    border-top: 1px solid #d6d6d6;
 }
 .explore{
     display: flex;
