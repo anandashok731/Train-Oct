@@ -297,6 +297,27 @@ button.menubar{
         height: 23rem;
     }
 }
+@media screen and (min-width:550px){
+    .image_cards{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        flex-wrap: wrap;
+        flex-grow: 1;
+        column-gap: 6vw;
+        align-content: center;
+    }
+    .images{
+        width: 100%;
+    }
+    .images img{
+        width:44vw;
+        height: 45vw;
+    }
+    .card_details{
+        margin-top: -120px;
+    }
+
+}
 @media screen and (min-width:744px){
  .search{
     display: none;
@@ -546,6 +567,32 @@ button.menubar{
         .search_bar_header{
            margin-left: 160px;
         }
+        .scrollbar{
+            width: 100%;
+        }
+            .image_cards{
+                display: grid;
+                grid-template-columns: 1fr 1fr 1fr;
+                flex-wrap: wrap;
+                flex-grow: 1;
+                column-gap: 4vw;
+                align-content: center;
+            }
+            .images{
+                margin-top: 50px;
+                width: 100%;
+            }
+            .images img{
+                border-radius: 20px;
+                width:30vw;
+                height: 35vw;
+            }
+            .card_details{
+                margin-top: -65px;
+            }
+            .footer_2{
+                width: 100%;
+            }
     }
     @media screen and (min-width:1024px){
         .search_bar_header{
@@ -610,11 +657,32 @@ button.menubar{
             margin-left: 80px;
         }
         .profile{
-            margin-left: 270px;
+            margin-left: 285px;
         }
         .scrollbar{
-            width: 87.5%;
+            width: 92%;
         }
+        .scroll_next{
+            width: 80px;
+        }
+        .image_cards{
+            display: grid;
+            grid-template-columns:1fr 1fr 1fr 1fr;
+        }
+        .images{
+            width: 100%;
+        }
+        .images img{
+            width:22vw;
+            height: 23.5vw;
+        }
+        .card_details{
+            margin-left: 5px;
+        }
+        .footer_2{
+            width: 100%;
+        }
+
     }
     @media screen and (min-width:1440px){
         .header_2{
@@ -636,7 +704,17 @@ button.menubar{
         }
         .image_cards{
             display: grid;
-            grid-template-columns: repeat(4,1fr);
-            padding: 0 40px 0 31px;
+            grid-template-columns:1fr 1fr 1fr 1fr;
         }
+        .images{
+            width: 100%;
+        }
+        .images img{
+            width:22vw;
+            height: 23vw;
+        }
+        .card_details{
+            margin-left: 10px;
+        }
+        
     }
