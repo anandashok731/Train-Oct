@@ -1,0 +1,79 @@
+@font-face {
+    font-family: zegoe;
+    src: url(asset/font/latest.woff2);
+}
+@font-face {
+    font-family: zegoe;
+    src: url(asset/font/SegoeUI-Roman-VF_web.woff2);
+}
+body{
+    margin: 0;
+    padding: 0;
+}
+*{
+    margin: 0;
+    padding: 0;
+    font-family: zegoe;
+}
+.header_nav{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 12px;
+    height: 54px;
+    
+}
+.header{
+    display: flex;
+    align-items: center;
+    min-width: 130px;
+    gap: 16px;
+    padding-left: 12px;
+
+}
+.header_menu{
+    padding-top:5px;
+}
+.header_menu svg{
+    width: 20px;
+    height: 15px;
+}
+.header a{
+    text-decoration: none;
+    font-size: 18px;
+    font-weight: 600;
+    line-height: 40px;
+    color: #1A1A1F;
+}
+.logo{
+    padding-top: 5px;
+    width: 32px;
+    margin-left: -20px;
+}
+.signin{
+    display: flex;
+    align-items: center;
+    padding-left: 8px;
+    gap: 12px;
+}
+.search_icon{
+    padding-top: 5px;
+}
+.search_icon img{
+    width: 18px;
+    height: 18px;
+}
+.search_icon button{
+    border: none;
+    background: none;
+}
+.signin p{
+    display: flex;
+    align-items: center;
+    font-size: 14px;
+    font-weight: 400;
+    padding: 18px 20px 20px 21px;
+    text-decoration: none;
+    color: #1A1A1F;
+    white-space: nowrap;
+}
