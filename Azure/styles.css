@@ -20,8 +20,7 @@ body{
     align-items: center;
     justify-content: space-between;
     padding: 12px;
-    height: 54px;
-    
+    height: 54px; 
 }
 .header{
     display: flex;
@@ -76,4 +75,71 @@ body{
     text-decoration: none;
     color: #1A1A1F;
     white-space: nowrap;
+}
+.header_1{
+    display: none;
+}
+@media screen and (min-width:768px){
+    .header_nav{
+        display: none;
+    }
+    .header_1{
+        display: flex;
+        justify-content: space-between;
+        padding:15px 12px;
+        height: 55px;
+    }
+    .azure{
+        display: flex;
+        font-size: 18px;
+        gap: 10px;
+    }
+    .azure svg{
+        width: 24px;
+        height: 25px;
+    }
+    .azure p{
+        line-height: 25px;
+        font-weight: zagoe;
+    }
+    .main_header{
+        display: flex;
+    }
+    .header_list{
+        display: flex;
+        font-size: 13px;
+        padding-left: 20px;
+        gap: 12px;
+        color: #1A1A1F;
+    }
+    .header_list div:hover{
+        cursor: pointer;
+        padding-left: 10px;
+        border: 1px dashed #1A1A1F;
+    }
+    .header_list span{
+        font-size: 18px;
+    }
+    .header_right{
+        display: flex;
+        gap: 18px;
+        align-items:stretch;
+        padding-top: 3px;
+        padding-left: 2px;
+    }
+    .header_right a{
+        font-size: 14px;
+        text-decoration: none;
+        color: #1A1A1F;
+    }
+    .header_search img{
+        width: 14px;
+        height: 14px;
+    }
+    .dot_menu button{
+        width: 24px;
+        height: 24px;
+        background: none;
+        border: none;
+    }
 }
