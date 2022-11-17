@@ -1,0 +1,311 @@
+@font-face {
+    font-family: zegoe;
+    src: url(asset/font/latest.woff2);
+}
+@font-face {
+    font-family: zegoe;
+    src: url(asset/font/SegoeUI-Roman-VF_web.woff2);
+}
+body{
+    margin: 0;
+    padding: 0;
+}
+*{
+    margin: 0;
+    padding: 0;
+    font-family: zegoe;
+}
+.header_nav{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 12px;
+    height: 54px; 
+}
+.header{
+    display: flex;
+    align-items: center;
+    min-width: 130px;
+    gap: 16px;
+    padding-left: 12px;
+
+}
+.header_menu{
+    padding-top:5px;
+}
+.header_menu svg{
+    width: 20px;
+    height: 15px;
+}
+.header a{
+    text-decoration: none;
+    font-size: 18px;
+    font-weight: 600;
+    line-height: 40px;
+    color: #1A1A1F;
+}
+.logo{
+    padding-top: 5px;
+    width: 32px;
+    margin-left: -20px;
+}
+.signin{
+    display: flex;
+    align-items: center;
+    padding-left: 8px;
+    gap: 12px;
+}
+.search_icon{
+    padding-top: 5px;
+}
+.search_icon img{
+    width: 18px;
+    height: 18px;
+}
+.search_icon button{
+    border: none;
+    background: none;
+}
+.signin p{
+    display: flex;
+    align-items: center;
+    font-size: 14px;
+    font-weight: 400;
+    padding: 18px 20px 20px 21px;
+    text-decoration: none;
+    color: #1A1A1F;
+    white-space: nowrap;
+}
+.header_1{
+    display: none;
+}
+.banner{
+    display: flex;
+    height: 67px;
+    background-color: #0078d4;
+    align-items: center;
+    justify-content: center;
+}
+.banner a{
+    text-decoration: none;
+    font-family: zegoe;
+    font-size: 14px;
+    font-weight: 600;
+    color: #fff;
+    line-height: 21px;
+    margin: 0 20px;
+    text-align: center;
+}
+.banner a:hover{
+    cursor: pointer;
+    text-decoration: underline;
+}
+.container_1{
+    background-image: url(https://azure.microsoft.com/images/page/home/december-hero-mobile.png);
+    background-repeat: no-repeat;
+    background-position:100% 100%;
+    height: 714px;
+    display: flex;
+    flex-direction: column;
+    object-fit: cover;
+    gap: 30px;
+}
+.heading_1 p{
+    font-size: 20px;
+    color: #0078D4;
+    font-family: zegoe;
+    font-weight: 600;
+    height: 54px;
+    padding: 60px 10px 10px 15px;
+    width: 88%;
+    text-align: center;
+}
+.content_1 p{
+    font-size: 54px;
+    color: #1A1A1F;
+    font-weight: 600;
+    text-align: center;
+    margin-top: -35px;
+    line-height: 60px;
+    word-spacing: 5px;
+}
+.content_text{
+    font-size: 18px;
+    font-weight: 400;
+    color: #4c4c51;
+    text-align: center;
+    height: 187px;
+    padding: 0 15px;
+}
+.content_button{
+    display: flex;
+    align-content: center;
+    flex-direction: column;
+    padding: 35px;
+    row-gap: 10px;
+}
+.button1{
+    height: 43px;
+    color: #fff;
+    background: #0078d4;
+    border: 1px solid #0078d4;
+    border-radius: 4px;
+    font-size: 14px;
+    padding: 10px 16px;
+}
+.button1:hover{
+    text-decoration: underline;
+    cursor: pointer;
+    background-color: #0062ad;
+}
+
+.button2{
+    height: 43px;
+    color: #000;
+    font-weight: 600;
+    background: transparent;
+    border: 0.5px solid #4c4c51;
+    border-radius: 5px;
+    font-size: 16px;
+}
+.button2:hover{
+    text-decoration: underline;
+    cursor: pointer;
+    background-color: #50e6ef;
+    color: black;
+}
+@media screen and (min-width:768px){
+    .header_nav{
+        display: none;
+    }
+    .header_1{
+        display: flex;
+        justify-content: space-between;
+        padding:15px 12px;
+        height: 55px;
+    }
+    .azure{
+        display: flex;
+        font-size: 18px;
+        gap: 10px;
+    }
+    .azure svg{
+        width: 24px;
+        height: 25px;
+    }
+    .azure p{
+        line-height: 25px;
+        font-weight: zegoe;
+    }
+    .main_header{
+        display: flex;
+    }
+    .header_list{
+        display: flex;
+        font-size: 13px;
+        padding-left: 20px;
+        gap: 12px;
+        color: #1A1A1F;
+    }
+    .header_list div:hover{
+        cursor: pointer;
+        padding-left: 10px;
+        border: 1px dashed #1A1A1F;
+    }
+    .header_list span{
+        font-size: 18px;
+    }
+    .header_right{
+        display: flex;
+        gap: 18px;
+        align-items:stretch;
+        padding-top: 3px;
+        padding-left: 2px;
+    }
+    .header_right a{
+        font-size: 14px;
+        text-decoration: none;
+        color: #1A1A1F;
+    }
+    .header_search img{
+        width: 14px;
+        height: 14px;
+    }
+    .dot_menu button{
+        width: 24px;
+        height: 24px;
+        background: none;
+        border: none;
+    }
+    .header_right_2{
+        display: none;
+    }
+}
+@media screen and (min-width:1080px){
+    .header_1{
+        display: flex;
+        justify-content: space-between;
+        padding:20px 8px;
+        height: 61px;
+    }
+    .azure{
+        gap: 23px;
+    }
+    .header_list{
+        padding-left: 1px;
+        margin-top: -2px;
+        margin-left: 23px;
+    }
+    .header_right{
+        display: none;
+    }
+    .header_right_2{
+        display: flex;
+        justify-content: space-evenly;
+    }
+    input{
+        border: none;
+        width:78%;
+        height: 30px;
+    }
+    .header_search_2{
+        margin-top: -5px;
+        margin-left: -10px;
+    }
+    .headerlist_2{
+        display: flex;
+        gap: 14px;
+        align-items: center;
+        margin-top: -35px;
+    }
+    .headerlist_2 a{
+        text-decoration: none;
+        font-size: 13px;
+        color: #1A1A1F;
+    }
+    .headerlist_2 a:nth-child(4){
+        display: inline-block;
+        font-size: 12px;
+        font-weight: 600;
+        background-color: #89c402;
+        border: 1px solid #6f9e02;
+        color: #1A1A1F;
+        text-align: center;
+        border-radius: 4px;
+        width: 63px;
+        padding: 9px 0;
+    }
+    .header_search_2{
+        display: flex;
+        height: 32px;
+        border:1px solid #1A1A1F ;
+        border-radius: 6px;
+        opacity: 0.7;
+        width:25%;
+        padding-left: 5px;
+    }
+    .header_search_2 img{
+        width: 13px;
+        height: 13px;
+    }
+}
