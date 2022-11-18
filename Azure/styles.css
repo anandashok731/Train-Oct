@@ -348,7 +348,7 @@ body{
     .card-1 {
         grid-row: 1/3;
         background: url("asset/optimize-desktop.jpg");
-        height: 85%;
+        height: 96.5%;
         width: 105%;
         background-repeat: no-repeat;
         background-position-x: 9%;
@@ -366,7 +366,7 @@ body{
         flex-direction: column;
         align-items:flex-start;
         position: relative;
-        top: 30pc;
+        top: 28pc;
         left: 10px;
     }
     .card_content1 h2 a {
@@ -385,6 +385,95 @@ body{
         margin: -5px 0;
         font-family: zegoe;
     }
+    .card-2{
+        display: flex;
+        width: 110%;
+        height: 14pc;
+        background-color: #fff;
+        border-radius: 6px;
+        box-shadow: 0 2px 5px rgb(0 0 0 / 14%);
+        color: #4C4C51;
+        border: 1px solid transparent;
+        margin-left: -30px;
+        gap: 20px;
+    }
+    .card_content2 h2 a, .card_content3 h2 a{
+        text-decoration: none;
+        color: #0062AD;
+        font-size: 20px;
+        width: 150px;
+    }
+    .card_content2 p, .card_content3 p{
+        font-size: 16px;
+        color: #1A1A1F;
+        line-height: 1.5;
+        margin-top: 20px;
+    }
+    .card_content2{
+        margin-left:130px ;
+        margin-right: 25px;
+        margin-top: 30px;
+    }
+    .card_content2 h2{
+        text-align: left;
+    }
+    .logo img{
+        width: 119px;
+        height: 220px;
+        object-fit: cover;
+        margin-left: 20px;
+    }
+    .card-3{
+        display: flex;
+        width: 110%;
+        height: 21pc;
+        background-color: #fff;
+        border-radius: 6px;
+        box-shadow: 0 2px 5px rgb(0 0 0 / 14%);
+        color: #4C4C51;
+        border: 1px solid transparent;
+        margin-left: -30px;
+        gap: 20px;
+    }
+    .logo2 img{
+        width: 119px;
+        height: 254px;
+        object-fit: cover;
+        margin-top: 60px;
+    }
+    .card_content3{
+        margin-left: 40px;
+        margin-right: 10px;
+        margin-top: 40px;
+    }
+    .card_content3 h2{
+        text-align: left;
+    }
+    .card_content3 p{
+        margin-top: 55px;
+    }
+    .section_part2{
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: stretch;
+        gap: 10px;
+        margin-top: 50px;
+    }
+    .section_part2 span{
+        width: 5vw;
+       margin-right: 36px;
+       line-height: 1.5;
+   }
+   .section_part2 a{
+    padding: 0px 10px;
+    display: flex;
+    align-items: center;
+    line-height: 1.5;
+    width: 11.892vw;
+    height: 64px;
+    padding-left: 30px;
+   }
 
 }
 @media screen and (min-width:769px){
@@ -411,6 +500,11 @@ body{
     }
     .button2{
         width: 144px;
+    }
+}
+@media screen and (min-width:782px){
+    .logo img{
+        object-fit: unset;
     }
 }
 @media screen and (min-width:960px){
@@ -457,6 +551,15 @@ body{
 @media screen and (min-width:1037px){
     .content_text p{
         width: 489px;
+    }
+    .logo2 img{
+        object-fit: unset;
+    }
+    .card_content3{
+        margin-top: 120px;
+    }
+    .card_content3 p{
+        margin-top: 30px;
     }
 }
 @media screen and (min-width:1080px){
@@ -547,6 +650,14 @@ body{
 @media screen and (min-width:1098px){
     .content_text p{
         width: 520px;
+    }
+    .section_part2 span{
+        width: 10vw;
+        margin-top: 15px;
+    }
+    .section_part2 a{
+        padding: 0;
+        height: 43px;
     }
 }
 @media screen and (min-width:1160px){
