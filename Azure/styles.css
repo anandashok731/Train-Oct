@@ -780,7 +780,7 @@ form:hover{
     font-weight: 400;
     color: #1A1A1F;
     padding: 2px 0;
-    margin: 0px 15px 13px 16px;
+    margin: 0px 15px 13px 10px;
 }
 .footer_section3_list span{
     font-family: zegoe;
@@ -788,7 +788,7 @@ form:hover{
     font-weight: 600;
     color: #1A1A1F;
     padding: 2px 0;
-    margin: 0px 12px 12px 16px;
+    margin: 0px 12px 12px 10px;
 }
 
 
@@ -796,6 +796,12 @@ form:hover{
     .banner{
         height: 48px;
     }
+}
+@media screen and (min-width:540px){
+    .section6_banner{
+        grid-template-columns: repeat(6, 40%);
+    }
+    
 }
 @media screen and (min-width:542px){
     .banner_2 h2{
@@ -1096,6 +1102,10 @@ form:hover{
     width: 36px;
     height: 36px;
 }
+.section3_card_tab img{
+    width: 36px;
+    width: 36px;
+}
 .section3_card_tab a{
     text-decoration: none;
     font-family: zegoe;
@@ -1112,6 +1122,61 @@ form:hover{
     line-height: 1.5;
     margin-top: 7px;
 }
+.section3_card_tab:first-child p{
+    margin-top: 30px;
+}
+.section3_card_tab:nth-child(2) p{
+    margin: 0 4px;
+    margin-top: 20px;
+}
+.section3_card_tab:nth-child(2) a{
+    margin: 0px -20px;
+    margin-top: 30px;
+}
+.section3_card_tab:nth-child(3) p{
+    margin: 0 -5px;
+    margin-top: 20px;
+} 
+.section3_card_tab:nth-child(4) a{
+    margin: 0 -5px;
+    margin-top: 20px;
+} 
+.section3_card_tab:nth-child(5){
+    padding-top: 20px;
+} 
+.section3_card_tab:nth-child(6) p{
+    margin: 0 -5px;
+}
+.section3_card_tab:last-child a{
+    margin: 0 -6px;
+} 
+.section4 h2{
+    font-size: 24px;
+}
+.section4_container{
+    margin-top: 10px;
+}
+.section5_container{
+    flex-direction: row;
+    align-items: center;
+    max-width: 1310px;
+    margin-left: auto;
+}
+.section5_content{
+    width: 45%;   
+}
+.section5_content h2{
+    text-align: left;
+}
+.section5 img{
+    width: 41%;
+    max-width: 485.83px;
+}
+.section5_button{
+    margin-top: 36px;
+    width: 50%;
+}
+
 
 }
 @media screen and (min-width:769px){
