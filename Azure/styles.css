@@ -541,6 +541,63 @@ body{
     line-height: 1.5;
     margin: 0 5px;
 }
+.section7_container{
+    padding: 24px;
+    background-color: #f8f9fa;
+}
+.section7_container p{
+    font-family: zegoe;
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 1.3;
+    color: #242429 ;
+}
+.section7 img{
+    max-width: 100%;
+}
+.section7_button{
+    width: 100%;
+    margin-top: 32px;
+}
+.section7_image{
+    position: relative;
+}
+.section7_button a{
+    text-decoration: none;
+    background-color: transparent;
+    border: 1px solid #0078d4;
+    border-radius: 4px;
+    color: #0062ad;
+    display: inline-block;
+    font-size: 14px;
+    font-weight: 600;
+    padding: 10px 16px;
+    transition-property: background-color;
+}
+.section7_desktop{
+    display: none;
+}
+.playbutton{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #0062AD;
+    background-color: #fff;
+    border-radius: 50px;
+    width: 75px;
+    height: 75px;
+    position: absolute;
+    left: 40%;
+    right: 50%;
+    bottom: 40%;
+}
+.playbutton span{
+    font-size: 35px;
+}
+.section7_video_link{
+    display: none;
+}
+
 
 @media screen and (min-width:506px){
     .banner{
