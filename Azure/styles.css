@@ -405,11 +405,12 @@ body{
 .section4_image img{
     width: 100%;
 }
-.section4_logos .logo_icon:first-child{
+.section4_logos .logo_icon_mob:first-child{
     display: flex;
     justify-content: center;
 }
-.desktop_logo{
+
+.section4_image_desktop, .desktop_logo{
     display: none;
 }
 .section4_text p{
@@ -705,6 +706,9 @@ footer{
     list-style: none;
     padding: 2px 12px;
 }
+.footer_section2_desktop{
+    display: none;
+}
 .footer_section2{
     display: flex;
     flex-direction: column;
@@ -790,7 +794,16 @@ form:hover{
     padding: 2px 0;
     margin: 0px 12px 12px 10px;
 }
-
+@media screen and (min-width:440px){
+    .social_media{
+        margin: 0 -4px;
+        padding-top: 10px;
+    }
+.footer_section1{
+    display: flex;
+    flex-direction: row;
+    }
+}
 
 @media screen and (min-width:506px){
     .banner{
@@ -800,6 +813,9 @@ form:hover{
 @media screen and (min-width:540px){
     .section6_banner{
         grid-template-columns: repeat(6, 40%);
+    }
+    .social_media{
+        margin-left: 20px;
     }
     
 }
@@ -1150,11 +1166,18 @@ form:hover{
 .section3_card_tab:last-child a{
     margin: 0 -6px;
 } 
+.section4{
+    margin-bottom: 50px;
+}
 .section4 h2{
     font-size: 24px;
 }
 .section4_container{
     margin-top: 10px;
+}
+.dot_scroll{
+    position: relative;
+    top: 20px;
 }
 .section5_container{
     flex-direction: row;
@@ -1163,7 +1186,7 @@ form:hover{
     margin-left: auto;
 }
 .section5_content{
-    width: 45%;   
+    width: 40%;   
 }
 .section5_content h2{
     text-align: left;
@@ -1176,7 +1199,88 @@ form:hover{
     margin-top: 36px;
     width: 50%;
 }
+.section6_banner{
+    grid-template-columns: repeat(3, 1fr);
+}
+.section6_card:nth-child(3) a, .section6_card:nth-child(3) img{
+    display: none;
+}
+.section6_card:nth-child(3){
+    display: flex;
+    background-image: url(https://azurecomcdn.azureedge.net/cvt-71ab4118a469abafc002b18247a0975cc9fb5a29de5b2a6b684e890ed1b90e76/images/page/home/news/scott-g.webp);
+    align-items: flex-end;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+.section6_card:nth-child(3) p{
+    padding: 8px;
+    margin-top: 110px;
+    font-size: 18px;
+    font-weight: 600;
+    color: #fff;
+}
+.section6_card:nth-child(5) a, .section6_card:nth-child(5) img{
+    display: none;
+}
+.section6_card:nth-child(5){
+    display: flex;
+    align-items: flex-end;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-image: url(https://azurecomcdn.azureedge.net/cvt-71ab4118a469abafc002b18247a0975cc9fb5a29de5b2a6b684e890ed1b90e76/images/page/home/news/azure-regions.png);
+}
+.section6_card:nth-child(5) p{
+    padding: 8px;
+    margin-top: 110px;
+    font-size: 18px;
+    font-weight: 600;
+    color: #fff;
+}
+.section7_image{
+    display: none;
+}
+.section7_desktop{
+    display: flex;
+    flex-direction: column;
+}
+.section7_desktop .playbutton1{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #0062AD;
+    background-color: #fff;
+    border-radius: 50px;
+    width: 75px;
+    height: 75px;
+    position: absolute;
+    left: 40%;
+    transform: translate(50%,10pc);
+}
+.section7_desktop .playbutton1 span{
+ font-size: 35px;
+}
 
+.section8_card{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 25px;
+}
+.section8_image img{
+    width: 48px;
+    height: 48px;
+}
+.section8_text{
+    margin-top: 18px;
+    padding: 0;
+}
+.section8_card p{
+    display: flex;
+    color: #fff;
+    font-size: 16px;
+    font-family: zegoe;
+    margin-top: 12px;
+}
 
 }
 @media screen and (min-width:769px){
@@ -1215,6 +1319,121 @@ form:hover{
         width: 450px;
         height: 178px;
     }
+    .card-1{
+        background-size: 200% 80%;
+    }
+    .card_content1 p{
+        margin-right: 20px;
+    }
+    .section_part2 span{
+        width: 6vw;
+        margin-top: 10px;
+    }
+    .section3{
+        display: flex;
+        flex-direction: row;
+    }
+    div.list_item{
+        margin-right: -100px;
+    }
+    div.section3_card_tab{
+        margin: 0 50px;
+    }
+    .section3_card_tab:nth-child(2), .section3_card_tab:nth-child(5){
+        position: relative;
+        left: -90px;
+    }
+    .section3_card_tab:nth-child(3), .section3_card_tab:nth-child(6){
+        position: relative;
+        left: -180px;
+    }
+    .section4_logos .logo_icon_mob img{
+        display: none;
+    }
+    .desktop_logo {
+        display: flex;
+    }
+    .section4_logos{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    .logo_icon img{
+        filter:grayscale(100%);
+        width:100%;
+    }
+    .logo_icon{
+        margin: 12px 32px;
+        max-width: 150px;
+        height: 80px;
+    }
+    .section4_image{
+        display: none;
+    }
+    .section4_image_desktop{
+        display: flex;
+    }
+    .section4_image_desktop img{
+        width: 100vw;
+        min-height: 600px;
+        object-fit: cover;
+    }
+    .section4_text{
+        border-radius: 6px;
+        box-shadow: 0 2px 5px rgb(0 0 0 / 14%);
+        color: #4c4c51;
+        position: relative;
+        top: -19pc;
+        border: 1px solid transparent;
+        background-color: rgba(26,26,31,.94);
+        color: #f8f9fa;
+        padding: 12px;
+        width: 450px;
+        height: 12pc;
+        margin-left: 20px;
+    }
+    .section4_text p{
+        color: #f8f9fa;
+        font-size: 20px;
+        font-family: zegoe;
+    }
+    .section4_container a{
+        color: #fff;
+        text-decoration: underline;
+        text-decoration-color: #b8b9ba;
+        position: relative;
+        top: -24pc;
+        left: 30px;
+    }
+    .dot_scroll{
+        display: none;
+    }
+    .section6_banner{
+        grid-template-columns: repeat(4,1fr);
+    }
+    .section6_card:nth-child(3){
+        grid-column: 3/5;
+        background-position-x: center;
+        background-size: cover; 
+    }
+    .section6_card:nth-child(5){
+        grid-column: 2/4;
+        
+    }
+    .section6_card:nth-child(3) p{
+        font-size: 24px;
+        padding: 12px 18px 24px 18px;
+    }
+    .section6_card:nth-child(5) p{
+        font-size: 24px;
+        padding: 12px 14px 24px 14px;
+    }
+    .section8_banner{
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        column-gap: 30px;
+    }
+
 }
 @media screen and (min-width:961px){
     .container_1{
@@ -1228,6 +1447,44 @@ form:hover{
     }
     .content_button{
         margin-top: -5pc;
+    }
+    .footer_box{
+        display: none;
+    }
+    .footer_section2_desktop{
+        display: grid;
+        grid-template-columns: repeat(6, 1fr);
+        column-gap: 24px;
+        padding: 0 18px;
+    }
+    .title h3{
+        font-family: zegoe;
+        font-size: 14px;
+        font-weight: 600;
+        color: #1A1A1F;
+        margin: 0;
+    }
+    .footer_section2_list{
+        display: flex;
+        flex-direction: column;
+        margin-top: 12px;
+        row-gap: 12px;
+    }
+    .footer_section2_list a{
+        font-family: zegoe;
+        font-size: 12px;
+        font-weight: 400;
+        color: #1A1A1F;
+        text-decoration: none;
+        padding: 2px 0;
+        line-height: 1.5;
+    }
+    .footer_section2{
+        margin-top: 5px;
+    }
+    .footer_section3{
+        display: grid;
+        column-gap: 24px;
     }
 }
 @media screen and (min-width:965px){
@@ -1376,6 +1633,9 @@ form:hover{
     }
     .content_text p{
         width: 625px;
+    }
+    .section2 .card-2, .section2 .card-3{
+        width: 100%;
     }
 }
 @media screen and (min-width:1440px){
