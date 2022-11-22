@@ -1,0 +1,12 @@
+@font-face {
+    font-family: etsy-light;
+    src: url(asset/font/Guardian-EgypTT-Light.woff2);
+}
+@font-face {
+    font-family: etsy-regular;
+    src: url(asset/font/Graphik-Regular-Web.woff2);
+}
+@font-face {
+    font-family: etsy-medium;
+    src: url(asset/font/Graphik-Medium-Web.woff2);
+}
