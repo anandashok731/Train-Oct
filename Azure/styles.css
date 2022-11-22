@@ -1371,6 +1371,12 @@ form:hover{
         filter:grayscale(100%);
         width:100%;
     }
+    .desktop .logo_icon{
+        border-bottom: 4px solid #0062AD;
+    }
+    .desktop img{
+        filter: grayscale(0);
+    }
     .logo_icon{
         margin: 12px 32px;
         max-width: 150px;
@@ -1770,11 +1776,11 @@ form:hover{
 @media screen and (min-width:1360px){
     .container_1{
         background-position-x: 50%;
-        height: 700px;
+        background-size: 140% 100%;
         padding-left: 20px;
     }
     .content_text p{
-        width: 625px;
+        width: 620px;
     }
     .section2 .card-2, .section2 .card-3{
         width: 100%;
@@ -1795,10 +1801,25 @@ form:hover{
         left: -250px;
     }
     .section3_tab_image{
-        left: 68pc;
+        width: 22%;
+        left: 64.5pc;
     }
     .section3_tab_image img{
         height: 470px;
+    }
+    .azure_link{
+        display: flex;
+        position: relative;
+        left: -60px;
+        margin-top: 33pc;
+        margin-left: -810px;        
+    }
+    .azure_link a{
+        margin: 0 35px;
+        margin-left: 0;
+    }
+    .footer_section3_list{
+        margin-left:17pc ;
     }
     
 }
