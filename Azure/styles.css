@@ -751,6 +751,9 @@ footer{
     color: #1A1A1F;
     margin-bottom: 10px;
 }
+form{
+    width: 65%;
+}
 select#language{
     box-sizing: border-box;
     color: #1a1a1f;
@@ -1166,6 +1169,9 @@ form:hover{
 .section3_card_tab:last-child a{
     margin: 0 -6px;
 } 
+.section3_tab_image{
+    display: none;
+}
 .section4{
     margin-bottom: 50px;
 }
@@ -1347,6 +1353,9 @@ form:hover{
         position: relative;
         left: -180px;
     }
+    .section4{
+        margin-bottom: 0px;
+    }
     .section4_logos .logo_icon_mob img{
         display: none;
     }
@@ -1374,7 +1383,7 @@ form:hover{
         display: flex;
     }
     .section4_image_desktop img{
-        width: 100vw;
+        width: 100%;
         min-height: 600px;
         object-fit: cover;
     }
@@ -1382,15 +1391,15 @@ form:hover{
         border-radius: 6px;
         box-shadow: 0 2px 5px rgb(0 0 0 / 14%);
         color: #4c4c51;
-        position: relative;
-        top: -19pc;
+        position: absolute;
+        margin-top: -20pc;
         border: 1px solid transparent;
         background-color: rgba(26,26,31,.94);
         color: #f8f9fa;
-        padding: 12px;
-        width: 450px;
+        padding: 10px;
         height: 12pc;
         margin-left: 20px;
+        width: 47%;
     }
     .section4_text p{
         color: #f8f9fa;
@@ -1401,12 +1410,15 @@ form:hover{
         color: #fff;
         text-decoration: underline;
         text-decoration-color: #b8b9ba;
-        position: relative;
-        top: -24pc;
-        left: 30px;
+        position: absolute;
+        margin-top: -10pc;
+        margin-left: 30px;
     }
     .dot_scroll{
         display: none;
+    }
+    .section5{
+        padding: 0;
     }
     .section6_banner{
         grid-template-columns: repeat(4,1fr);
@@ -1428,10 +1440,102 @@ form:hover{
         font-size: 24px;
         padding: 12px 14px 24px 14px;
     }
+    .section7 .playbutton1{
+        display: none;
+    }
+    .section7_desktop img{
+        width: 100%;
+        height: 100%;
+        min-height: 600px;
+        max-height: 700px;
+        max-width: 1920px;
+        object-fit: cover;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    .section7_container{
+        border: 1px solid transparent;
+        border-radius: 6px;
+        box-shadow: 0 2px 5px rgb(0 0 0 / 14%);
+        background-color: rgba(26,26,31,.94);
+        position: absolute;
+        width: 50%;
+        height: 30%;
+        margin-top: -35pc;
+        margin-left: 20px;
+    }
+    .section7_container p{
+        color: #f4f5f6;
+        font-size: 24px;
+        font-family: zegoe;
+        font-weight: 600;
+        margin: 0 2px;
+    }
+    .section7_button{
+        display: none;
+    }
+    .section7_video_link{
+        display: flex;
+        margin-top: 20px;
+    }
+    .section7_button1{
+    background-color: #0078d4;
+    border: 0;
+    border-radius: 4px;
+    color: #fff;
+    display: inline-block;
+    font-size: 16px;
+    font-weight: 600;
+    padding: 12px 16px 12px 48px;
+    }
+    .section7_button1 span{
+        content: '';
+        display: block;
+        width: 20px;
+        height: 24px;
+        border-radius: 15px;
+        background-color: #50e6ff;
+        position: absolute;
+        left: 40px;
+        padding-left: 10px;
+        padding-top: 3px;
+    }
+    .section7_button1  a{
+        background-color: #0078d4;
+        border: 0;
+        border-radius: 4px;
+        color: #fff;
+        display: inline-block;
+        font-size: 16px;
+        font-weight: 600;
+        width: auto;
+        margin-left: 10px;
+        white-space: nowrap;
+    }
+    .more{
+        margin-left: 20px;
+        margin-top: 10px;
+    }
+    .more a{
+        font-size: 14px;
+        color: #f4f5f6;
+    }
     .section8_banner{
         display: grid;
         grid-template-columns: repeat(3, 1fr);
         column-gap: 30px;
+    }
+    .footer_section3{
+        display: flex;
+        justify-content: space-between;
+        margin-top: 30px;
+    }
+    .footer_section3_list{
+        margin-right:140px;
+        margin-left: 110px;
+        position: relative;
+        top: -80px;
+        left: 150px;
     }
 
 }
@@ -1463,6 +1567,44 @@ form:hover{
         font-weight: 600;
         color: #1A1A1F;
         margin: 0;
+    }
+    .tab_section3{
+        overflow-x: hidden;
+    }
+    .section3_tab_image{
+        display: flex;
+        width: 18%;
+        overflow-x: hidden;
+        position: absolute;
+        left: 48pc;
+        margin-left: 20px;
+    }
+    .section3_tab_image img{
+        display: flex;
+        border: 4px solid #000;
+        height: 380px;
+        padding: 20px;
+        background-color: #000;
+        border-radius: 6px;
+    }
+    .azure_link{
+        display: flex;
+        margin-left: -720px;
+        margin-top: 28pc;
+        color: #0062ad;
+    }
+    .azure_link a{
+        color: #0062ad;
+        display: inline-block;
+        font-size: 14px;
+        text-decoration: none;
+        margin: 0 -2px;
+        line-height: 1.5;
+    }
+    .forward span{
+        position: relative;
+        top: 10px;
+        width: 42px;
     }
     .footer_section2_list{
         display: flex;
@@ -1637,6 +1779,28 @@ form:hover{
     .section2 .card-2, .section2 .card-3{
         width: 100%;
     }
+    div.section3_card_tab{
+        margin: 0 70px;
+        padding: 50px 10px;
+    }
+    div.section3_card_tab p{
+        font-size: 16px;
+    }
+    .section3_card_tab:nth-child(2), .section3_card_tab:nth-child(5){
+        position: relative;
+        left: -120px;
+    }
+    .section3_card_tab:nth-child(3), .section3_card_tab:nth-child(6){
+        position: relative;
+        left: -250px;
+    }
+    .section3_tab_image{
+        left: 68pc;
+    }
+    .section3_tab_image img{
+        height: 470px;
+    }
+    
 }
 @media screen and (min-width:1440px){
     .container_1{
