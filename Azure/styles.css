@@ -1818,6 +1818,15 @@ form:hover{
         margin: 0 35px;
         margin-left: 0;
     }
+    .section6_card:nth-child(3) p{
+        margin-top: 165px;
+    }
+    .section6_card:nth-child(5) p{
+        margin-top: 155px;
+    }
+    .section7_container{
+        margin-top: -37pc;
+    }
     .footer_section3_list{
         margin-left:17pc ;
     }
