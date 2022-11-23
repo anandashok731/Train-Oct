@@ -22,6 +22,9 @@
 .logo{
     padding-top: 6px;
 }
+.logo1{
+    display: none;
+}
 .header_part1{
     display: flex;
     justify-content: space-between;
@@ -46,7 +49,6 @@
 .search_bar{
     display: flex;
     flex-direction: column;
-    al
 }
 .search{
     display: flex;
@@ -80,4 +82,21 @@
     padding-right: 10px;
     padding-left: 15px;
     padding-top: 5px;
+}
+@media screen and (min-width:480px){
+    .logo{
+        display: none;
+    }
+    .logo1{
+        display: flex;
+        padding-top: 6px;
+    }
+    .search{
+        width: 90%;
+        left: 40px;
+        top: -25px;
+    }
+    .menu_icon{
+        top: 15px;
+    }
 }
