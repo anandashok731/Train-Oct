@@ -10,3 +10,74 @@
     font-family: etsy-medium;
     src: url(asset/font/Graphik-Medium-Web.woff2);
 }
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.header{
+    padding: 0 9px;
+    padding-bottom: 12px;
+}
+.logo{
+    padding-top: 6px;
+}
+.header_part1{
+    display: flex;
+    justify-content: space-between;
+}
+.header_sign{
+    display: flex;
+    align-items: center;
+    gap: 22px;
+    padding-right: 15px;
+    padding-top: 3px;
+}
+.header_sign button{
+    border: none;
+    color: #222;
+    background-color: #fff;
+    font-size: 13px;
+    font-family: etsy-medium;
+    line-height: 1.4;
+    transform: translateX(7px);
+    padding:12px 15px;
+}
+.search_bar{
+    display: flex;
+    flex-direction: column;
+    al
+}
+.search{
+    display: flex;
+    justify-content: space-between;
+    border: 2px solid #222;
+    padding: 8px;
+    border-radius: 96px;
+    width: 85%;
+    position: relative;
+    left: 13%;
+    top: -28px;
+    height: 46px;
+    align-items: center;
+    justify-content: space-between;
+    background: rgba(34, 34, 34, 0.05);
+}
+.search input{
+    font-family: etsy-regular;
+    font-size: 16px;
+    border: none;
+    background-color: transparent;
+    width: 66%;
+    padding-left: 10px;
+}
+.menu_icon{
+    position: relative;
+    top: 12px;
+    left: 3px;
+}
+.search_icon{
+    padding-right: 10px;
+    padding-left: 15px;
+    padding-top: 5px;
+}
