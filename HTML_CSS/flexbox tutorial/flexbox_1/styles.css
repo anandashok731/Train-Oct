@@ -1,0 +1,62 @@
+.hero{
+    background-color: #444;
+    background-image: url(asset/pic.jpg);
+    background-blend-mode: multiply;
+    background-size: cover;
+    height: 100vh;
+    padding: 1em;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+.hero h1{
+    color: greenyellow;
+    border: 1px solid white;
+    width: 14%;
+    padding-left: 15px;
+}
+.sales-points{
+    padding: 12vh 0;
+    text-align: center;
+    display: flex;
+    justify-content: space-around;
+    flex-direction: column;
+
+}
+ @media (min-width:40rem) {
+    .sales-points{
+        flex-direction: row;
+
+    }
+}
+.sales-point{
+    /* margin: 0 1vw; */
+    /* background-color: red; */
+    flex-basis: 30%;
+}
+.cta{
+    background-image: url(asset/pic.jpg);
+    background-size: cover;
+    padding: 10vh 0;
+    color: white;
+    display: flex;
+    justify-content: flex-end;
+}
+a{
+    text-decoration: none;
+    background-color: green;
+    color: #222;
+    border: 1px solid white;
+    border: none;
+    padding: 10px;
+
+}
+.cta-text{
+    flex-basis: 100%;
+    padding: 0 2em;
+    @media (min-width: 40rem){
+        flex-basis:50%;
+    }
+}
