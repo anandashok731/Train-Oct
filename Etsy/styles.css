@@ -127,6 +127,26 @@ div.section1_text p{
     margin-top: 5px;
     margin-bottom: 10px;
 }
+.section2{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+}
+.banner2 h2{
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 24px;
+    font-family: etsy-regular;
+    text-align: center;
+    color: #222;
+}
+.section2_card{
+    margin-left: 10px;
+}
+.section2 img{
+    width: 142px;
+    height: 112px;
+    border-radius: 6px;
+}
 @media screen and (min-width:480px){
     .logo{
         display: none;
